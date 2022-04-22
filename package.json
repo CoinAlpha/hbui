@@ -1,0 +1,29 @@
+{
+  "name": "hbui",
+  "version": "1.0.0",
+  "description": "Hummingbot UI library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoinAlpha/hbui.git"
+  },
+  "keywords": [
+    "hummingbot",
+    "ui",
+    "library",
+    "design",
+    "system",
+    "react",
+    "tailwind",
+    "twin.macro"
+  ],
+  "author": "Hummingbot Design Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoinAlpha/hbui/issues"
+  },
+  "homepage": "https://github.com/CoinAlpha/hbui#readme"
+}
