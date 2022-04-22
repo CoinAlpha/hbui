@@ -1,4 +1,4 @@
-const shadows = require('../../../../tokens/tokens').boxShadow
+const shadows = require('../../tokens/tokens').boxShadow
 
 module.exports = {
   base: shadows.shadow,

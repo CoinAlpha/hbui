@@ -1,6 +1,6 @@
-const colors = require('./src/hb_ui/constants/colors')
-const tokens = require('./tokens/tokens')
-const breakpoints = require('./src/hb_ui/constants/media-queries/breakpoints')
+const tokens = require('../tokens/tokens')
+const colors = require('../constants/colors')
+const breakpoints = require('../constants/media-queries/breakpoints')
 
 module.exports = {
   darkMode: 'class',
