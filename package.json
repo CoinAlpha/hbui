@@ -1,7 +1,7 @@
 {
   "name": "ab-tests",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "HBUI library",
   "homepage": "https://github.com/CoinAlpha/hbui#readme",
   "scripts": {
