@@ -15,6 +15,8 @@ var _react2 = require("@emotion/react");
 
 var _templateObject;
 
+var _excluded = ["color", "radius", "style", "duration", "strokeWidth", "center"];
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -23,13 +25,19 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Spin = function Spin(props) {
-  var color = props.color,
-      radius = props.radius,
-      style = props.style,
-      duration = props.duration,
-      strokeWidth = props.strokeWidth,
-      center = props.center;
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function Spinner(_ref) {
+  var color = _ref.color,
+      radius = _ref.radius,
+      style = _ref.style,
+      duration = _ref.duration,
+      strokeWidth = _ref.strokeWidth,
+      center = _ref.center,
+      props = _objectWithoutProperties(_ref, _excluded);
+
   var styles = style || {};
 
   if (center) {
@@ -42,7 +50,12 @@ var Spin = function Spin(props) {
     style: styles
   }, (0, _react2.jsx)("svg", {
     viewBox: "0 0 42 42",
-    css: (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n          @keyframes rotate {\n            100% {transform: rotate(360deg);}\n          }\n          animation-name: rotate;\n          animation-duration: ", "ms;\n          animation-timing-function: linear;\n          display: inline-block;\n          animation-iteration-count: infinite;\n          width: ", "px;\n          height: ", "px;\n        "])), duration ? duration : 900, radius ? radius : 40, radius ? radius : 40)
+    css: (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n          @keyframes rotate {\n            100% {transform: rotate(360deg);}\n          }\n          animation-name: rotate;\n          animation-timing-function: linear;\n          display: inline-block;\n          animation-iteration-count: infinite;\n        "]))),
+    style: {
+      animationDuration: "".concat(duration ? duration : 900, "ms"),
+      width: "".concat(radius ? radius : 40, "px"),
+      height: "".concat(radius ? radius : 40, "px")
+    }
   }, (0, _react2.jsx)("g", {
     fill: "none",
     transform: "translate(3 3)",
@@ -61,9 +74,9 @@ var Spin = function Spin(props) {
     cy: "18",
     r: "18"
   }), Path)));
-};
+}
 
-var _default = Spin;
+var _default = Spinner;
 exports["default"] = _default;
 
 var SpinnerBlock = _styledComponents["default"].div({
