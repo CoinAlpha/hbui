@@ -1,15 +1,12 @@
 import React from 'react'
-import { styled, theme, css } from 'twin.macro'
+import { styled, css } from 'twin.macro'
 
-const Spin = props => {
-  const { color, radius, style, duration, strokeWidth, center } = props
-
+function Spinner({ color, radius, style, duration, strokeWidth, center, ...props }) {
   const styles = style || {}
   if (center) {
     styles.display = 'block'
     styles.textAlign = 'center'
   }
-
   const Path = getPathElement(color)
   return (
     <span style={styles}>
@@ -20,13 +17,15 @@ const Spin = props => {
             100% {transform: rotate(360deg);}
           }
           animation-name: rotate;
-          animation-duration: ${duration ? duration : 900}ms;
           animation-timing-function: linear;
           display: inline-block;
           animation-iteration-count: infinite;
-          width: ${radius ? radius : 40}px;
-          height: ${radius ? radius : 40}px;
         `}
+        style={{
+          animationDuration: `${duration ? duration : 900}ms`,
+          width: `${radius ? radius : 40}px`,
+          height: `${radius ? radius : 40}px`
+        }}
       >
         <g fill="none" transform="translate(3 3)" strokeWidth="3">
           <circle
@@ -42,7 +41,7 @@ const Spin = props => {
   )
 }
 
-export default Spin
+export default Spinner
 
 export const SpinnerBlock = styled.div({
   display: 'flex',
