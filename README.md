@@ -5,6 +5,24 @@ WIP - contributions welcome
 
 ### Getting started
 
+This module contains a library of UI components and elements as well as configuration files.
+
+#### To use the elements and elements:
+
+For example, you can import and use a button like this:
+
+```shell
+import { Button } from '@hummingbot/hbui/elements/button'
+
+<Button>
+  Default
+</Button>
+```
+
+Please refer to the documentation website for more: https://coinalpha-dsm.netlify.app/
+
+
+
 #### To update design tokens:
 
 1/3: Make sure you have a Specify `personalAccessToken` and the Specify CLI installed in your system:
