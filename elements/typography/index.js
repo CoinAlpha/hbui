@@ -22,26 +22,13 @@ const sharedTransforms = props => [
   props.isPulsing && tw`animate-pulse`,
   props.isCentered && tw`text-center`,
   props.noSelect && tw`select-none`,
-  props.isWhite &&
-    css`
-      color: white;
-    `,
-  props.isBrandColor &&
-    css`
-      color: ${green} !important;
-    `,
-  props.isRed &&
-    css`
-      color: ${red} !important;
-    `,
-  props.isBlue &&
-    css`
-      color: ${blue} !important;
-    `,
-  props.isOrange &&
-    css`
-      color: ${orange} !important;
-    `,
+  props.isWhite && tw`!text-white`,
+  props.isBrandColor && tw`!text-green`,
+  props.isGreen && tw`!text-green`,
+  props.isRed && tw`!text-red`,
+  props.isBlue && tw`!text-blue`,
+  props.isOrange && tw`!text-orange`,
+  props.isYellow && tw`!text-yellow`,
   props.leadingNone &&
     css`
       line-height: 100% !important;
@@ -155,22 +142,22 @@ export const Orange = styled.span({
 
 // forms / dashboards
 
-export const FieldLabelNano = styled(PNano)({
+const FieldLabelNano = styled(PNano)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 })
 
-export const FieldLabelTiny = styled(PTiny)({
+const FieldLabelTiny = styled(PTiny)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 })
 
-export const FieldLabelSmall = styled(PSmall)({
+const FieldLabelSmall = styled(PSmall)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 })
 
-export const FieldLabel = styled(P)({
+const FieldLabel = styled(P)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 })
@@ -178,7 +165,6 @@ export const FieldLabel = styled(P)({
 const labelStyles = [
   tw`text-quintenary dark:text-quintenary`,
   tw`font-medium`,
-  tw`uppercase`,
   tw`leading-none`,
 ]
 

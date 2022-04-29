@@ -76,8 +76,7 @@ var NavBarRoot = _styledComponents["default"].div(function (_ref2) {
       isDisabled = _ref2.isDisabled;
   return [{
     "display": "flex",
-    "width": "100%",
-    "backgroundColor": "var(--bg-primary)"
+    "width": "100%"
   }, {
     "justifyContent": "space-between",
     "alignItems": "center"

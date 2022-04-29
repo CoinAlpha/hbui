@@ -27,19 +27,21 @@ function BreadcrumbsBar({links, buttons, history}) {
         </LinksRow>
       }
       { buttons &&
-        <ItemsRow>
-          {
-            buttons.map(button => {
-            return(
-              <Link key={button.url} to={button.url}>
-                <Button isSmall isSuccess={button.url === history.pathname}>
-                  {button.label}
-                </Button>
-              </Link>
-            )
-          })
-          }
-        </ItemsRow>
+        <div style={{margin: '0 auto', width: '696px'}} className='AQUI'>
+          <ItemsRow>
+            {
+              buttons.map(button => {
+              return(
+                <Link key={button.url} to={button.url}>
+                  <Button isSmall isSuccess={button.url === history.pathname}>
+                    {button.label}
+                  </Button>
+                </Link>
+              )
+            })
+            }
+          </ItemsRow>
+        </div>
       }
     </BreadcrumbsBarRoot>
   )
@@ -48,7 +50,7 @@ function BreadcrumbsBar({links, buttons, history}) {
 export default BreadcrumbsBar
 
 const BreadcrumbsBarRoot = styled.div(({ isUppercase, isDisabled }) => [
-  tw`flex w-full bg-primary relative`,
+  tw`flex w-full relative`,
   tw`items-center`,
   tw`relative py-2.5 px-4`,
   tw`border-b border-secondary`,

@@ -44,7 +44,7 @@ const NavBar = ({ siteNameA, siteNameB, linksLeft, linksRight, userData, showThe
 export default NavBar
 
 const NavBarRoot = styled.div(({ isUppercase, isDisabled }) => [
-  tw`flex w-full bg-primary`,
+  tw`flex w-full`,
   tw`justify-between items-center`,
   tw`relative py-2 pl-12 pr-4`,
   tw`border-b border-secondary`,

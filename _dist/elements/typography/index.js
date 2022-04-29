@@ -295,8 +295,6 @@ var labelStyles = [{
 }, {
   "fontWeight": "500"
 }, {
-  "textTransform": "uppercase"
-}, {
   "lineHeight": "1"
 }];
 var LabelNano = (0, _styledComponents["default"])(FieldLabelNano)({}, function (props) {

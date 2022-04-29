@@ -54,7 +54,13 @@ function BreadcrumbsBar(_ref) {
       to: link.url,
       label: link.label
     }));
-  })), buttons && (0, _react2.jsx)(_layout.ItemsRow, null, buttons.map(function (button) {
+  })), buttons && (0, _react2.jsx)("div", {
+    style: {
+      margin: '0 auto',
+      width: '696px'
+    },
+    className: "AQUI"
+  }, (0, _react2.jsx)(_layout.ItemsRow, null, buttons.map(function (button) {
     return (0, _react2.jsx)(_reactRouterDom.Link, {
       key: button.url,
       to: button.url
@@ -62,7 +68,7 @@ function BreadcrumbsBar(_ref) {
       isSmall: true,
       isSuccess: button.url === history.pathname
     }, button.label));
-  })));
+  }))));
 }
 
 var _default = BreadcrumbsBar;
@@ -74,7 +80,6 @@ var BreadcrumbsBarRoot = _styledComponents["default"].div(function (_ref2) {
   return [{
     "display": "flex",
     "width": "100%",
-    "backgroundColor": "var(--bg-primary)",
     "position": "relative"
   }, {
     "alignItems": "center"
