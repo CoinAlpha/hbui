@@ -7,7 +7,7 @@ WIP - contributions welcome
 
 This module contains a library of UI components and elements as well as configuration files.
 
-#### To use the elements and elements:
+#### To use the components and elements:
 
 For example, you can import and use a button like this:
 
