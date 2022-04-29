@@ -5,13 +5,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Underline = exports.Red = exports.PrimaryColor = exports.PTiny = exports.PSmall = exports.PNano = exports.P = exports.Orange = exports.LabelTiny = exports.LabelSmall = exports.LabelNano = exports.Label = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.Green = exports.FieldLabelTiny = exports.FieldLabelSmall = exports.FieldLabelNano = exports.FieldLabel = exports.Bold = exports.Body = exports.Blue = void 0;
+exports.Underline = exports.Red = exports.PrimaryColor = exports.PTiny = exports.PSmall = exports.PNano = exports.P = exports.Orange = exports.LabelTiny = exports.LabelSmall = exports.LabelNano = exports.Label = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.Green = exports.Bold = exports.Body = exports.Blue = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
 var _colors = require("../../constants/colors");
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8;
+var _templateObject, _templateObject2, _templateObject3;
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
@@ -55,7 +55,28 @@ var sharedTransforms = function sharedTransforms(props) {
     "textAlign": "center"
   }, props.noSelect && {
     "userSelect": "none"
-  }, props.isWhite && (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      color: white;\n    "]))), props.isBrandColor && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      color: ", " !important;\n    "])), _colors.green), props.isRed && (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n      color: ", " !important;\n    "])), _colors.red), props.isBlue && (0, _styledComponents.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n      color: ", " !important;\n    "])), _colors.blue), props.isOrange && (0, _styledComponents.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n      color: ", " !important;\n    "])), _colors.orange), props.leadingNone && (0, _styledComponents.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n      line-height: 100% !important;\n    "]))), props.isLabel && (0, _styledComponents.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n      font-family: Inter !important;\n      line-height: 100% !important;\n    "]))), (0, _styledComponents.css)(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    a {\n      text-decoration: underline;\n    }\n  "])))];
+  }, props.isWhite && {
+    "--tw-text-opacity": "1",
+    "color": "rgba(255, 255, 255, var(--tw-text-opacity)) !important"
+  }, props.isBrandColor && {
+    "--tw-text-opacity": "1",
+    "color": "rgba(0, 194, 206, var(--tw-text-opacity)) !important"
+  }, props.isGreen && {
+    "--tw-text-opacity": "1",
+    "color": "rgba(0, 194, 206, var(--tw-text-opacity)) !important"
+  }, props.isRed && {
+    "--tw-text-opacity": "1",
+    "color": "rgba(235, 87, 87, var(--tw-text-opacity)) !important"
+  }, props.isBlue && {
+    "--tw-text-opacity": "1",
+    "color": "rgba(49, 141, 255, var(--tw-text-opacity)) !important"
+  }, props.isOrange && {
+    "--tw-text-opacity": "1",
+    "color": "rgba(240, 135, 39, var(--tw-text-opacity)) !important"
+  }, props.isYellow && {
+    "--tw-text-opacity": "1",
+    "color": "rgba(252, 219, 23, var(--tw-text-opacity)) !important"
+  }, props.leadingNone && (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      line-height: 100% !important;\n    "]))), props.isLabel && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      font-family: Inter !important;\n      line-height: 100% !important;\n    "]))), (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    a {\n      text-decoration: underline;\n    }\n  "])))];
 };
 
 var PNano = _styledComponents["default"].p({}, function (props) {
@@ -271,22 +292,18 @@ var FieldLabelNano = (0, _styledComponents["default"])(PNano)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 });
-exports.FieldLabelNano = FieldLabelNano;
 var FieldLabelTiny = (0, _styledComponents["default"])(PTiny)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 });
-exports.FieldLabelTiny = FieldLabelTiny;
 var FieldLabelSmall = (0, _styledComponents["default"])(PSmall)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 });
-exports.FieldLabelSmall = FieldLabelSmall;
 var FieldLabel = (0, _styledComponents["default"])(P)({
   fontFamily: 'Inter',
   lineHeight: '1 !important'
 });
-exports.FieldLabel = FieldLabel;
 var labelStyles = [{
   "color": "var(--text-quintenary)",
   ".dark &": {
