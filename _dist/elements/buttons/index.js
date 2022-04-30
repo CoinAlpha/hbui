@@ -24,6 +24,7 @@ var Button = _styledComponents["default"].button(function (_ref) {
       isWarning = _ref.isWarning,
       isDanger = _ref.isDanger,
       isSmall = _ref.isSmall,
+      isTiny = _ref.isTiny,
       isLarge = _ref.isLarge,
       isExtraLarge = _ref.isExtraLarge,
       isDisabled = _ref.isDisabled,
@@ -74,6 +75,12 @@ var Button = _styledComponents["default"].button(function (_ref) {
     "paddingTop": "2px",
     "paddingBottom": "1.5px",
     "fontSize": "13px"
+  }], isTiny && [{
+    "paddingLeft": "0.25rem",
+    "paddingRight": "0.25rem",
+    "paddingTop": "0px",
+    "paddingBottom": "0px",
+    "fontSize": "11px"
   }], isLarge && [{
     "paddingLeft": "1rem",
     "paddingRight": "1rem",
