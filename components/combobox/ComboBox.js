@@ -3,7 +3,7 @@ import { Combobox, Transition } from '@headlessui/react'
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid'
 import tw, { css } from 'twin.macro'
 
-export default function ComboBox({items, selected, setSelected}) {
+export default function ComboBox({items, selected, setSelected, ...props}) {
   // const [selected, setSelected] = useState(items[0]) // use this line in the consumer component, pass funcs as args
   const [query, setQuery] = useState('')
 
@@ -18,7 +18,7 @@ export default function ComboBox({items, selected, setSelected}) {
         )
 
   return (
-    <Combobox value={selected} onChange={setSelected}>
+    <Combobox value={selected} onChange={setSelected} {...props}>
       <div tw="relative mt-1">
         <div tw="relative w-full text-left rounded-lg cursor-default focus:outline-none sm:text-sm overflow-hidden">
           <Combobox.Input
