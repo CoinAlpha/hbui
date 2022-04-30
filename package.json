@@ -18,8 +18,8 @@
   "description": "HBUI library",
   "homepage": "https://github.com/CoinAlpha/hbui#readme",
   "scripts": {
-    "build": "yarn && rm -rf _dist && yarn packindex && yarn pack_categories",
-    "prepack": "rm -rf node_modules",
+    "build": "yarn && rm -rf _dist && yarn packindex && yarn pack_categories && rm -rf node_modules",
+    "off_prepack": "rm -rf node_modules",
     "pack_categories": "yarn packcomponents && yarn packelements && yarn packconstants && yarn packsystem && yarn packtokens && yarn packassets",
     "packindex": "babel index.js --out-file _dist/index.js",
     "packelements": "babel elements/**/**/**/** -d _dist/elements && rm _dist/elements/*.*",
