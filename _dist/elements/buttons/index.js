@@ -87,6 +87,11 @@ var Button = _styledComponents["default"].button(function (_ref) {
     "paddingBottom": "0.375rem",
     "fontSize": "16px"
   }], isSecondary && [{
+    "color": "var(--text-tertiary)",
+    ".dark &": {
+      "color": "var(--text-secondary)"
+    }
+  }, {
     "backgroundColor": "rgba(0, 0, 0, 0)",
     ":hover": {
       "backgroundColor": "rgba(0, 0, 0, 0)"

@@ -46,6 +46,7 @@ export const Button = styled.button(
     isTiny && [tw`px-1 pt-0 pb-0 text-[11px]`],
     isLarge && [tw`px-4 py-1.5 text-[16px]`],
     isSecondary && [
+      tw`text-tertiary dark:text-secondary`,
       tw`bg-transparent hover:bg-transparent active:bg-tertiary`,
       tw`border-secondary hover:border-quaternary`,
     ],
