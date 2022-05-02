@@ -35,6 +35,7 @@ const sharedTransforms = props => [
     `,
   props.isLabel &&
     css`
+      user-select: none;
       font-family: Inter !important;
       line-height: 100% !important;
     `,
