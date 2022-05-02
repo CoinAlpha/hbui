@@ -27,7 +27,7 @@ function BreadcrumbsBar({links, buttons, history}) {
         </LinksRow>
       }
       { buttons &&
-        <div style={{margin: '0 auto', width: '696px'}} className='AQUI'>
+        <div style={{margin: '0 auto', width: '696px'}}>
           <ItemsRow>
             {
               buttons.map(button => {
