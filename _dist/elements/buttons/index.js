@@ -35,8 +35,11 @@ var Button = _styledComponents["default"].button(function (_ref) {
     "display": "flex"
   }, {
     "color": "var(--text-tertiary)",
-    "fontSize": "14px",
-    "fontWeight": "500"
+    ".dark &": {
+      "color": "var(--text-tertiary) !important"
+    },
+    "fontWeight": "500 !important",
+    "fontSize": "14px"
   }, {
     "transitionProperty": "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
     "transitionTimingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
@@ -63,7 +66,7 @@ var Button = _styledComponents["default"].button(function (_ref) {
     "paddingRight": "0.75rem",
     "paddingTop": "5px",
     "paddingBottom": "5px",
-    "borderRadius": "4px",
+    "borderRadius": "0.125rem",
     ":focus": {
       "outline": "2px solid transparent",
       "outlineOffset": "2px"

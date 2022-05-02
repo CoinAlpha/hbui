@@ -17,11 +17,11 @@ export const Button = styled.button(
     iconColor,
   }) => [
     tw`flex`,
-    tw`text-tertiary text-[14px] font-medium`,
+    tw`text-tertiary dark:text-tertiary! font-medium! text-[14px] `,
     tw`transition duration-100`,
     tw`border-2 border-primary hover:border-tertiary active:border-quaternary`,
     tw`bg-tertiary hover:bg-quaternary active:bg-quintenary`,
-    tw`px-3 pt-[5px] pb-[5px] rounded focus:outline-none`,
+    tw`px-3 pt-[5px] pb-[5px] rounded-sm focus:outline-none`,
     css`
       font-family: 'Inter';
       align-items: center;
