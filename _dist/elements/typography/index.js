@@ -76,7 +76,7 @@ var sharedTransforms = function sharedTransforms(props) {
   }, props.isYellow && {
     "--tw-text-opacity": "1",
     "color": "rgba(252, 219, 23, var(--tw-text-opacity)) !important"
-  }, props.leadingNone && (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      line-height: 100% !important;\n    "]))), props.isLabel && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      font-family: Inter !important;\n      line-height: 100% !important;\n    "]))), (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    a {\n      text-decoration: underline;\n    }\n  "])))];
+  }, props.leadingNone && (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      line-height: 100% !important;\n    "]))), props.isLabel && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      user-select: none;\n      font-family: Inter !important;\n      line-height: 100% !important;\n    "]))), (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    a {\n      text-decoration: underline;\n    }\n  "])))];
 };
 
 var PNano = _styledComponents["default"].p({}, function (props) {

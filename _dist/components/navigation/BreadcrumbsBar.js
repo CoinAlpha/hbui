@@ -58,8 +58,7 @@ function BreadcrumbsBar(_ref) {
     style: {
       margin: '0 auto',
       width: '696px'
-    },
-    className: "AQUI"
+    }
   }, (0, _react2.jsx)(_layout.ItemsRow, null, buttons.map(function (button) {
     return (0, _react2.jsx)(_reactRouterDom.Link, {
       key: button.url,

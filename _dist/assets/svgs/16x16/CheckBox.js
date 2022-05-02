@@ -15,7 +15,7 @@ var _react2 = require("@emotion/react");
 
 var _templateObject, _templateObject2;
 
-var _excluded = ["checked"];
+var _excluded = ["active"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -32,11 +32,11 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 function CheckBox(_ref) {
-  var checked = _ref.checked,
+  var active = _ref.active,
       props = _objectWithoutProperties(_ref, _excluded);
 
   return (0, _react2.jsx)(SVG, _extends({
-    checked: checked,
+    active: active,
     xmlns: "http://www.w3.org/2000/svg",
     width: "16",
     height: "16",
