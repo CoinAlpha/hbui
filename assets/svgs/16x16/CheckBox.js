@@ -1,10 +1,10 @@
 import React from "react";
 import tw, { styled, css } from 'twin.macro'
 
-function CheckBox({checked, ...props}) {
+function CheckBox({active, ...props}) {
   return (
     <SVG
-      checked={checked}
+      active={active}
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"
