@@ -63,9 +63,10 @@ function BreadcrumbsBar(_ref) {
     return (0, _react2.jsx)(_reactRouterDom.Link, {
       key: button.url,
       to: button.url
-    }, (0, _react2.jsx)(_buttons.Button, {
-      isSmall: true,
-      isSuccess: button.url === history.pathname
+    }, button.url === history.pathname ? (0, _react2.jsx)(_buttons.ButtonSuccess, {
+      isSmall: true
+    }, button.label) : (0, _react2.jsx)(_buttons.Button, {
+      isSmall: true
     }, button.label));
   }))));
 }
