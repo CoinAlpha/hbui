@@ -2,11 +2,6 @@
 
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
 var _react = _interopRequireDefault(require("react"));
@@ -35,29 +30,41 @@ function KebabControl(_ref) {
   var active = _ref.active,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  return (0, _react2.jsx)(SVG, _extends({
-    active: active,
+  return (0, _react2.jsx)(KebabControlRoot, _extends({
+    active: active
+  }, props), (0, _react2.jsx)("div", {
+    css: {
+      "position": "absolute",
+      "top": "-2px",
+      "left": "-3px",
+      "borderRadius": "0.125rem",
+      "backgroundColor": "var(--bg-tertiary)",
+      "width": "16px",
+      "height": "20px"
+    }
+  }), (0, _react2.jsx)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "10",
     height: "16",
-    viewBox: "0 0 10 16"
-  }, props), (0, _react2.jsx)("rect", {
-    width: "12",
-    height: "16",
-    fill: "#EBEBEB",
-    rx: "2"
-  }), (0, _react2.jsx)("path", {
-    fill: "#484D51",
+    viewBox: "0 0 10 16",
+    css: {
+      "cursor": "pointer",
+      "position": "absolute",
+      "top": "0px",
+      "left": "0px",
+      "fill": "currentColor",
+      "color": "var(--text-primary)"
+    }
+  }, (0, _react2.jsx)("path", {
     d: "M4 3.947c0 .533.438.948 1 .948.531 0 1-.415 1-.948C6 3.444 5.531 3 5 3c-.563 0-1 .444-1 .947zM4 7.947C4 7.444 4.438 7 5 7c.531 0 1 .444 1 .947 0 .533-.469.948-1 .948-.563 0-1-.415-1-.948zM5 12.895c-.563 0-1-.415-1-.948 0-.503.438-.947 1-.947.531 0 1 .444 1 .947 0 .533-.469.948-1 .948z"
-  }));
+  })));
 }
 
-var _default = KebabControl;
-exports["default"] = _default;
-
-var SVG = _styledComponents["default"].svg(function (_ref2) {
+var KebabControlRoot = _styledComponents["default"].div(function (_ref2) {
   var active = _ref2.active;
   return [{
-    "cursor": "pointer"
-  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    rect {\n      display: none;\n    }\n    :hover {\n      rect {\n        display: block;\n      }\n    }\n  "]))), active && [(0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      rect {\n        display: block;\n      }\n    "])))]];
+    "position": "relative",
+    "width": "10px",
+    "height": "16px"
+  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    div {\n      display: none;\n    }\n    :hover {\n      div {\n        display: block;\n      }\n    }\n  "]))), active && [(0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      div {\n        display: block;\n      }\n    "])))]];
 });
