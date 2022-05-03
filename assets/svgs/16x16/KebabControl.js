@@ -20,6 +20,8 @@ function KebabControl({active, ...props}) {
   );
 }
 
+export default KebabControl
+
 const KebabControlRoot = styled.div(({active}) => [
   tw`relative w-[10px] h-[16px]`,
   css`
