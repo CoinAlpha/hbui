@@ -65,7 +65,9 @@ stylesB[false] = {
 
 function MyToggle(_ref) {
   var _ref$active = _ref.active,
-      active = _ref$active === void 0 ? false : _ref$active;
+      active = _ref$active === void 0 ? false : _ref$active,
+      _ref$disabled = _ref.disabled,
+      disabled = _ref$disabled === void 0 ? false : _ref$disabled;
 
   var _useState = (0, _react.useState)(active),
       _useState2 = _slicedToArray(_useState, 2),
@@ -79,7 +81,11 @@ function MyToggle(_ref) {
       "transitionProperty": "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter",
       "transitionTimingFunction": "cubic-bezier(0.4, 0, 0.2, 1)",
       "transitionDuration": "150ms"
-    }, stylesA[enabled]]
+    }, stylesA[enabled]],
+    style: disabled ? {
+      pointerEvents: 'none',
+      opacity: 0.5
+    } : null
   }, (0, _react3.jsx)("span", {
     css: stylesB[enabled]
   }));
