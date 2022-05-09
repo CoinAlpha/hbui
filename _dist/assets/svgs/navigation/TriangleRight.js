@@ -18,7 +18,7 @@ function TriangleRight() {
     height: "8",
     css: {
       "fill": "currentColor",
-      "color": "var(--text-quintenary)"
+      "color": "var(--text-tertiary)"
     },
     viewBox: "0 0 4 8"
   }, (0, _react2.jsx)("path", {

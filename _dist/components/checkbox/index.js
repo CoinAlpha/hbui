@@ -13,8 +13,6 @@ var _excluded = ["active"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
@@ -42,10 +40,10 @@ var CheckboxRoot = _styledComponents["default"].div(function (_ref2) {
     "justifyContent": "center !important",
     "alignItems": "center !important"
   }, {
-    "backgroundColor": "var(--bg-primary)",
+    "backgroundColor": "var(--bg-body)",
     "position": "relative",
     "borderWidth": "2px",
-    "borderColor": "var(--border-secondary)",
+    "borderColor": "var(--border-body)",
     ":hover": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(0, 194, 206, var(--tw-border-opacity))"
@@ -61,16 +59,23 @@ var CheckboxRoot = _styledComponents["default"].div(function (_ref2) {
 });
 
 function CheckIcon(_ref3) {
-  _objectDestructuringEmpty(_ref3);
-
+  var active = _ref3.active;
   return (0, _react.jsx)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "10",
     height: "9",
-    fill: "none",
+    fill: "transparent",
     viewBox: "0 0 10 9"
   }, (0, _react.jsx)("path", {
-    stroke: "#151819",
+    css: {
+      "stroke": "currentColor",
+      "--tw-text-opacity": "1",
+      "color": "rgba(255, 255, 255, var(--tw-text-opacity))",
+      ".dark &": {
+        "--tw-text-opacity": "1",
+        "color": "rgba(0, 0, 0, var(--tw-text-opacity))"
+      }
+    },
     d: "M1 4.5L4.2 8 9 1"
   }));
 }

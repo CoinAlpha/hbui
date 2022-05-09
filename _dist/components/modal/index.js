@@ -40,7 +40,7 @@ function Modal(_ref) {
     css: {
       "position": "relative",
       "width": "33.333333%",
-      "backgroundColor": "var(--bg-primary)",
+      "backgroundColor": "var(--bg-body)",
       "padding": "24px"
     }
   }, (0, _react2.jsx)("div", {

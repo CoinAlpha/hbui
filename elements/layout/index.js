@@ -47,11 +47,11 @@ export const SBLRootContent = styled.div(() => [
     height: 100vh;
     overflow-y: scroll;
   `,
-  tw`bg-secondary w-full`,
+  tw`bg-body w-full`,
 ])
 
 export const SBLRootSidebar = styled.div(() => [
-  tw`bg-primary w-[0] md:w-[270px]`,
+  tw`bg-window w-[0] md:w-[270px]`,
   css`
     height: 100vh;
   `,
@@ -69,18 +69,25 @@ export const ItemsRow = styled.div(() => [
   `,
 ])
 
-export const Separator = styled.div(props => [
+export const SeparatorBase = styled.div(props => [
   css`
     height: 1px;
     width: 100%;
-    opacity: 0.5;
     margin-top: 20px;
+    border-bottom-width: 1px;
   `,
-  tw`bg-quaternary dark:(bg-quaternary)`,
+])
+
+export const Separator = styled(SeparatorBase)(props => [
+  tw`border-body`,
+])
+
+export const SeparatorWindow = styled(SeparatorBase)(props => [
+  tw`border-window`,
 ])
 
 export const Window = styled.div(({}) => [
-  tw`bg-primary py-sm px-md shadow rounded`,
+  tw`bg-window py-sm px-md shadow rounded`,
   css`
     margin: 0 auto;
     max-width: 696px;

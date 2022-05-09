@@ -43,7 +43,7 @@ function KebabControl(_ref) {
       "top": "-2px",
       "left": "-3px",
       "borderRadius": "0.125rem",
-      "backgroundColor": "var(--bg-tertiary)",
+      "backgroundColor": "var(--bg-input)",
       "width": "16px",
       "height": "20px"
     }

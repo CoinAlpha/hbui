@@ -26,7 +26,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var stylesA = {};
 stylesA[true] = {
   "--tw-bg-opacity": "1",
-  "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity))",
+  "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity)) !important",
   "position": "relative",
   "display": "inline-flex",
   "height": "1.5rem",
@@ -35,7 +35,12 @@ stylesA[true] = {
   "borderRadius": "9999px"
 };
 stylesA[false] = {
-  "backgroundColor": "var(--bg-quaternary)",
+  "--tw-bg-opacity": "1",
+  "backgroundColor": "rgba(201, 205, 207, var(--tw-bg-opacity))",
+  ".dark &": {
+    "--tw-bg-opacity": "1",
+    "backgroundColor": "rgba(62, 67, 71, var(--tw-bg-opacity))"
+  },
   "position": "relative",
   "display": "inline-flex",
   "height": "1.5rem",
@@ -51,7 +56,7 @@ stylesB[true] = {
   "height": "1rem",
   "width": "1rem",
   "borderRadius": "9999px",
-  "backgroundColor": "var(--bg-primary)"
+  "backgroundColor": "var(--bg-body)"
 };
 stylesB[false] = {
   "transform": "var(--tw-transform)",
@@ -60,7 +65,7 @@ stylesB[false] = {
   "height": "1rem",
   "width": "1rem",
   "borderRadius": "9999px",
-  "backgroundColor": "var(--bg-primary)"
+  "backgroundColor": "var(--bg-body)"
 };
 
 function MyToggle(_ref) {

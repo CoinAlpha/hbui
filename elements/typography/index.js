@@ -8,7 +8,7 @@ import {
 } from '../../constants/colors'
 
 const sharedTransforms = props => [
-  tw`text-black dark:(text-white)`,
+  tw`text-primary`,
   tw`m-0 font-normal`,
   props.isSmall && tw`text-sm`,
   props.isUnderline && tw`underline`,
@@ -164,7 +164,7 @@ const FieldLabel = styled(P)({
 })
 
 const labelStyles = [
-  tw`text-quintenary dark:text-quintenary`,
+  tw`text-tertiary`,
   tw`font-medium`,
   tw`leading-none`,
 ]

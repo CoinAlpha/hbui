@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Window = exports.Separator = exports.Section = exports.SBLRootSidebar = exports.SBLRootContent = exports.SBLRoot = exports.PageRoot = exports.PaddingBox = exports.ItemsRow = exports.ContainerRow = exports.Container = void 0;
+exports.Window = exports.SeparatorWindow = exports.SeparatorBase = exports.Separator = exports.Section = exports.SBLRootSidebar = exports.SBLRootContent = exports.SBLRoot = exports.PageRoot = exports.PaddingBox = exports.ItemsRow = exports.ContainerRow = exports.Container = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -82,7 +82,7 @@ exports.SBLRoot = SBLRoot;
 
 var SBLRootContent = _styledComponents["default"].div(function () {
   return [(0, _styledComponents.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n    height: 100vh;\n    overflow-y: scroll;\n  "]))), {
-    "backgroundColor": "var(--bg-secondary)",
+    "backgroundColor": "var(--bg-body)",
     "width": "100%"
   }];
 });
@@ -91,7 +91,7 @@ exports.SBLRootContent = SBLRootContent;
 
 var SBLRootSidebar = _styledComponents["default"].div(function () {
   return [{
-    "backgroundColor": "var(--bg-primary)",
+    "backgroundColor": "var(--bg-window)",
     "width": "0",
     "@media (min-width: 768px)": {
       "width": "270px"
@@ -114,22 +114,29 @@ var ItemsRow = _styledComponents["default"].div(function () {
 
 exports.ItemsRow = ItemsRow;
 
-var Separator = _styledComponents["default"].div(function (props) {
-  return [(0, _styledComponents.css)(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n    height: 1px;\n    width: 100%;\n    opacity: 0.5;\n    margin-top: 20px;\n  "]))), {
-    "backgroundColor": "var(--bg-quaternary)",
-    ".dark &": {
-      "backgroundColor": "var(--bg-quaternary)"
-    }
-  }];
+var SeparatorBase = _styledComponents["default"].div(function (props) {
+  return [(0, _styledComponents.css)(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n    height: 1px;\n    width: 100%;\n    margin-top: 20px;\n    border-bottom-width: 1px;\n  "])))];
 });
 
+exports.SeparatorBase = SeparatorBase;
+var Separator = (0, _styledComponents["default"])(SeparatorBase)(function (props) {
+  return [{
+    "borderColor": "var(--border-body)"
+  }];
+});
 exports.Separator = Separator;
+var SeparatorWindow = (0, _styledComponents["default"])(SeparatorBase)(function (props) {
+  return [{
+    "borderColor": "var(--border-window)"
+  }];
+});
+exports.SeparatorWindow = SeparatorWindow;
 
 var Window = _styledComponents["default"].div(function (_ref) {
   _objectDestructuringEmpty(_ref);
 
   return [{
-    "backgroundColor": "var(--bg-primary)",
+    "backgroundColor": "var(--bg-window)",
     "paddingTop": "24px",
     "paddingBottom": "24px",
     "paddingLeft": "32px",

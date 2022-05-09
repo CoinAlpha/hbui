@@ -80,25 +80,25 @@ var Button = (0, _styledComponents["default"])(ButtonBase)(function (_ref2) {
   _objectDestructuringEmpty(_ref2);
 
   return [{
-    "color": "var(--text-tertiary)",
-    ".dark &": {
-      "color": "var(--text-secondary)"
+    "color": "var(--text-button)",
+    ":hover": {
+      "color": "var(--text-button-hover)"
     }
   }, {
-    "backgroundColor": "var(--bg-tertiary)",
+    "backgroundColor": "var(--bg-button)",
     ":hover": {
-      "backgroundColor": "var(--bg-quaternary)"
+      "backgroundColor": "var(--bg-button-hover)"
     },
     ":active": {
-      "backgroundColor": "var(--bg-quintenary)"
+      "backgroundColor": "var(--bg-button-active)"
     }
   }, {
-    "borderColor": "var(--border-primary)",
+    "borderColor": "var(--border-button)",
     ":hover": {
-      "borderColor": "var(--border-tertiary)"
+      "borderColor": "var(--border-button-hover)"
     },
     ":active": {
-      "borderColor": "var(--border-quaternary)"
+      "borderColor": "var(--border-button-active)"
     }
   }];
 });
@@ -107,25 +107,25 @@ var ButtonSecondary = (0, _styledComponents["default"])(ButtonBase)(function (_r
   _objectDestructuringEmpty(_ref3);
 
   return [{
-    "color": "var(--text-tertiary)",
-    ".dark &": {
-      "color": "var(--text-secondary)"
+    "color": "var(--text-button-secondary)",
+    ":hover": {
+      "color": "var(--text-button-secondary-hover)"
     }
   }, {
-    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "backgroundColor": "var(--bg-button-secondary)",
     ":hover": {
-      "backgroundColor": "rgba(0, 0, 0, 0)"
+      "backgroundColor": "var(--bg-button-secondary-hover)"
     },
     ":active": {
-      "backgroundColor": "var(--bg-tertiary)"
+      "backgroundColor": "var(--bg-button-secondary-active)"
     }
   }, {
-    "borderColor": "var(--border-secondary)",
+    "borderColor": "var(--border-button-secondary)",
     ":hover": {
-      "borderColor": "var(--border-quaternary)"
+      "borderColor": "var(--border-button-secondary-hover)"
     },
     ":active": {
-      "borderColor": "var(--border-quaternary)"
+      "borderColor": "var(--border-button-secondary-active)"
     }
   }];
 });
@@ -134,33 +134,26 @@ var ButtonSuccess = (0, _styledComponents["default"])(ButtonBase)(function (_ref
   _objectDestructuringEmpty(_ref4);
 
   return [{
-    "--tw-text-opacity": "1",
-    "color": "rgba(255, 255, 255, var(--tw-text-opacity))",
-    ".dark &": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(0, 0, 0, var(--tw-text-opacity))"
-    }
-  }, {
-    "--tw-border-opacity": "1",
-    "borderColor": "rgba(0, 194, 206, var(--tw-border-opacity))",
+    "color": "var(--text-button-success)",
     ":hover": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(0, 194, 206, var(--tw-border-opacity))"
-    },
-    ":active": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(0, 194, 206, var(--tw-border-opacity))"
+      "color": "var(--text-button-success-hover)"
     }
   }, {
     "--tw-bg-opacity": "1",
     "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity))",
     ":hover": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(0, 177, 187, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-success-hover)"
     },
     ":active": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(0, 138, 146, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-success-active)"
+    }
+  }, {
+    "borderColor": "var(--border-button-success)",
+    ":hover": {
+      "borderColor": "var(--border-button-success-hover)"
+    },
+    ":active": {
+      "borderColor": "var(--border-button-success-active)"
     }
   }];
 });
@@ -169,33 +162,26 @@ var ButtonInfo = (0, _styledComponents["default"])(ButtonBase)(function (_ref5) 
   _objectDestructuringEmpty(_ref5);
 
   return [{
-    "--tw-text-opacity": "1",
-    "color": "rgba(255, 255, 255, var(--tw-text-opacity))",
-    ".dark &": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(0, 0, 0, var(--tw-text-opacity))"
-    }
-  }, {
-    "--tw-border-opacity": "1",
-    "borderColor": "rgba(49, 141, 255, var(--tw-border-opacity))",
+    "color": "var(--text-button-info)",
     ":hover": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(49, 141, 255, var(--tw-border-opacity))"
-    },
-    ":active": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(49, 141, 255, var(--tw-border-opacity))"
+      "color": "var(--text-button-info-hover)"
     }
   }, {
     "--tw-bg-opacity": "1",
     "backgroundColor": "rgba(49, 141, 255, var(--tw-bg-opacity))",
     ":hover": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(45, 128, 232, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-info-hover)"
     },
     ":active": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(35, 100, 181, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-info-active)"
+    }
+  }, {
+    "borderColor": "var(--border-button-info)",
+    ":hover": {
+      "borderColor": "var(--border-button-info-hover)"
+    },
+    ":active": {
+      "borderColor": "var(--border-button-info-active)"
     }
   }];
 });
@@ -204,33 +190,26 @@ var ButtonWarning = (0, _styledComponents["default"])(ButtonBase)(function (_ref
   _objectDestructuringEmpty(_ref6);
 
   return [{
-    "--tw-text-opacity": "1",
-    "color": "rgba(255, 255, 255, var(--tw-text-opacity))",
-    ".dark &": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(0, 0, 0, var(--tw-text-opacity))"
-    }
-  }, {
-    "--tw-border-opacity": "1",
-    "borderColor": "rgba(240, 135, 39, var(--tw-border-opacity))",
+    "color": "var(--text-button-warning)",
     ":hover": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(240, 135, 39, var(--tw-border-opacity))"
-    },
-    ":active": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(240, 135, 39, var(--tw-border-opacity))"
+      "color": "var(--text-button-warning-hover)"
     }
   }, {
     "--tw-bg-opacity": "1",
     "backgroundColor": "rgba(240, 135, 39, var(--tw-bg-opacity))",
     ":hover": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(218, 123, 35, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-warning-hover)"
     },
     ":active": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(170, 96, 28, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-warning-active)"
+    }
+  }, {
+    "borderColor": "var(--border-button-warning)",
+    ":hover": {
+      "borderColor": "var(--border-button-warning-hover)"
+    },
+    ":active": {
+      "borderColor": "var(--border-button-warning-active)"
     }
   }];
 });
@@ -239,33 +218,26 @@ var ButtonDanger = (0, _styledComponents["default"])(ButtonBase)(function (_ref7
   _objectDestructuringEmpty(_ref7);
 
   return [{
-    "--tw-text-opacity": "1",
-    "color": "rgba(255, 255, 255, var(--tw-text-opacity))",
-    ".dark &": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(0, 0, 0, var(--tw-text-opacity))"
-    }
-  }, {
-    "--tw-border-opacity": "1",
-    "borderColor": "rgba(235, 87, 87, var(--tw-border-opacity))",
+    "color": "var(--text-button-danger)",
     ":hover": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(235, 87, 87, var(--tw-border-opacity))"
-    },
-    ":active": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(235, 87, 87, var(--tw-border-opacity))"
+      "color": "var(--text-button-danger-hover)"
     }
   }, {
     "--tw-bg-opacity": "1",
     "backgroundColor": "rgba(235, 87, 87, var(--tw-bg-opacity))",
     ":hover": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(214, 79, 79, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-danger-hover)"
     },
     ":active": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(167, 62, 62, var(--tw-bg-opacity))"
+      "backgroundColor": "var(--bg-danger-active)"
+    }
+  }, {
+    "borderColor": "var(--border-button-danger)",
+    ":hover": {
+      "borderColor": "var(--border-button-danger-hover)"
+    },
+    ":active": {
+      "borderColor": "var(--border-button-danger-active)"
     }
   }];
 });

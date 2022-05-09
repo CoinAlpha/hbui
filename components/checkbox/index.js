@@ -14,22 +14,22 @@ function Checkbox({active, ...props}) {
 
 const CheckboxRoot = styled.div(({ active }) => [
   tw`cursor-pointer h-[16px] w-[16px] rounded-sm flex justify-center! items-center!`,
-  tw`bg-primary relative border-2 border-secondary hover:border-green`,
+  tw`bg-body relative border-2 border-body hover:border-green`,
   active && [
     tw`bg-green relative border-2 border-green`,
   ],
 ])
 
-function CheckIcon({}) {
+function CheckIcon({active}) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="10"
       height="9"
-      fill="none"
+      fill='transparent'
       viewBox="0 0 10 9"
     >
-      <path stroke="#151819" d="M1 4.5L4.2 8 9 1"></path>
+      <path tw='stroke-current text-white dark:text-black' d="M1 4.5L4.2 8 9 1"></path>
     </svg>
   );
 }

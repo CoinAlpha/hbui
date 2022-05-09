@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports.CalloutWarning = exports.CalloutTip = exports.CalloutSuccess = exports.CalloutNote = exports.CalloutInfo = exports.CalloutDanger = exports.CalloutBug = exports.Callout = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -33,7 +33,14 @@ var _react2 = require("@emotion/react");
 
 var _templateObject, _templateObject2;
 
-var _excluded = ["title", "text", "type"];
+var _excluded = ["title", "text"],
+    _excluded2 = ["title", "text"],
+    _excluded3 = ["title", "text"],
+    _excluded4 = ["title", "text"],
+    _excluded5 = ["title", "text"],
+    _excluded6 = ["title", "text"],
+    _excluded7 = ["title", "text"],
+    _excluded8 = ["title", "text"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -41,9 +48,9 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
 
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -52,215 +59,334 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 var Callout = function Callout(_ref) {
   var title = _ref.title,
       text = _ref.text,
-      type = _ref.type,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  var stateIcon = getStateIcon(type);
-  return (0, _react2.jsx)(Root, _extends({
-    type: type
-  }, props), (0, _react2.jsx)(Header, {
-    type: type
-  }, stateIcon, " ", title), (0, _react2.jsx)(Text, {
+  return (0, _react2.jsx)(RootDefault, props, (0, _react2.jsx)(HeaderDefault, null, title), (0, _react2.jsx)(Text, {
     className: "text"
   }, text));
 };
 
-var _default = Callout;
-exports["default"] = _default;
+exports.Callout = Callout;
 
-var getStateIcon = function getStateIcon(type) {
-  if (type === 'success') return (0, _react2.jsx)(_CheckIcon["default"], null);
-  if (type === 'warning') return (0, _react2.jsx)(_WarningIcon["default"], null);
-  if (type === 'danger') return (0, _react2.jsx)(_ErrorIcon["default"], null);
-  if (type === 'info') return (0, _react2.jsx)(_InfoIcon["default"], null);
-  if (type === 'tip') return (0, _react2.jsx)(_TipIcon["default"], null);
-  if (type === 'bug') return (0, _react2.jsx)(_BugIcon["default"], null);
-  if (type === 'note') return (0, _react2.jsx)(_NoteIcon["default"], null);
-  return null;
+var CalloutSuccess = function CalloutSuccess(_ref2) {
+  var title = _ref2.title,
+      text = _ref2.text,
+      props = _objectWithoutProperties(_ref2, _excluded2);
+
+  return (0, _react2.jsx)(RootSuccess, props, (0, _react2.jsx)(HeaderSuccess, null, (0, _react2.jsx)(_CheckIcon["default"], null), " ", title), (0, _react2.jsx)(Text, {
+    className: "text"
+  }, text));
 };
 
-var Root = _styledComponents["default"].div(function (_ref2) {
-  var type = _ref2.type;
+exports.CalloutSuccess = CalloutSuccess;
+
+var CalloutInfo = function CalloutInfo(_ref3) {
+  var title = _ref3.title,
+      text = _ref3.text,
+      props = _objectWithoutProperties(_ref3, _excluded3);
+
+  return (0, _react2.jsx)(RootInfo, props, (0, _react2.jsx)(HeaderInfo, null, (0, _react2.jsx)(_InfoIcon["default"], null), " ", title), (0, _react2.jsx)(Text, {
+    className: "text"
+  }, text));
+};
+
+exports.CalloutInfo = CalloutInfo;
+
+var CalloutWarning = function CalloutWarning(_ref4) {
+  var title = _ref4.title,
+      text = _ref4.text,
+      props = _objectWithoutProperties(_ref4, _excluded4);
+
+  return (0, _react2.jsx)(RootWarning, props, (0, _react2.jsx)(HeaderWarning, null, (0, _react2.jsx)(_WarningIcon["default"], null), " ", title), (0, _react2.jsx)(Text, {
+    className: "text"
+  }, text));
+};
+
+exports.CalloutWarning = CalloutWarning;
+
+var CalloutDanger = function CalloutDanger(_ref5) {
+  var title = _ref5.title,
+      text = _ref5.text,
+      props = _objectWithoutProperties(_ref5, _excluded5);
+
+  return (0, _react2.jsx)(RootDanger, props, (0, _react2.jsx)(HeaderDanger, null, (0, _react2.jsx)(_ErrorIcon["default"], null), " ", title), (0, _react2.jsx)(Text, {
+    className: "text"
+  }, text));
+};
+
+exports.CalloutDanger = CalloutDanger;
+
+var CalloutTip = function CalloutTip(_ref6) {
+  var title = _ref6.title,
+      text = _ref6.text,
+      props = _objectWithoutProperties(_ref6, _excluded6);
+
+  return (0, _react2.jsx)(RootTip, props, (0, _react2.jsx)(HeaderTip, null, (0, _react2.jsx)(_TipIcon["default"], null), " ", title), (0, _react2.jsx)(Text, {
+    className: "text"
+  }, text));
+};
+
+exports.CalloutTip = CalloutTip;
+
+var CalloutBug = function CalloutBug(_ref7) {
+  var title = _ref7.title,
+      text = _ref7.text,
+      props = _objectWithoutProperties(_ref7, _excluded7);
+
+  return (0, _react2.jsx)(RootBug, props, (0, _react2.jsx)(HeaderBug, null, (0, _react2.jsx)(_BugIcon["default"], null), " ", title), (0, _react2.jsx)(Text, {
+    className: "text"
+  }, text));
+};
+
+exports.CalloutBug = CalloutBug;
+
+var CalloutNote = function CalloutNote(_ref8) {
+  var title = _ref8.title,
+      text = _ref8.text,
+      props = _objectWithoutProperties(_ref8, _excluded8);
+
+  return (0, _react2.jsx)(RootNote, props, (0, _react2.jsx)(HeaderNote, null, (0, _react2.jsx)(_NoteIcon["default"], null), " ", title), (0, _react2.jsx)(Text, {
+    className: "text"
+  }, text));
+};
+
+exports.CalloutNote = CalloutNote;
+
+var Root = _styledComponents["default"].div(function (_ref9) {
+  var type = _ref9.type;
   return [{
     "borderRadius": "4px",
     "borderStyle": "solid",
     "borderLeftWidth": "8px",
     "borderRightWidth": "1px",
     "borderBottomWidth": "1px",
-    "borderTopWidth": "1px",
+    "borderTopWidth": "1px"
+  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    svg {\n      margin-right: 10px;\n    }\n  "])))];
+});
+
+var RootDefault = (0, _styledComponents["default"])(Root)(function (_ref10) {
+  _objectDestructuringEmpty(_ref10);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(223, 225, 226, var(--tw-border-opacity))",
     "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(241, 243, 243, var(--tw-bg-opacity))",
+    "backgroundColor": "rgba(241, 243, 243, var(--tw-bg-opacity))"
+  }, {
     ".dark &": {
       "backgroundColor": "rgba(250, 250, 250, 0.05)"
     }
-  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    svg {\n      margin-right: 10px;\n    }\n  "]))), type === 'success' && [{
+  }];
+});
+var RootSuccess = (0, _styledComponents["default"])(Root)(function (_ref11) {
+  _objectDestructuringEmpty(_ref11);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(176, 236, 240, var(--tw-border-opacity))",
-    "backgroundColor": "rgba(176, 236, 240, 0.2)",
+    "backgroundColor": "rgba(176, 236, 240, 0.2)"
+  }, {
     ".dark &": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(84, 214, 222, var(--tw-border-opacity))",
-      "backgroundColor": "rgba(84, 214, 222, 0.1)"
+      "backgroundColor": "rgba(0, 194, 206, 0.1)"
     }
-  }], type === 'info' && [{
+  }];
+});
+var RootInfo = (0, _styledComponents["default"])(Root)(function (_ref12) {
+  _objectDestructuringEmpty(_ref12);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(191, 220, 255, var(--tw-border-opacity))",
-    "backgroundColor": "rgba(191, 220, 255, 0.2)",
+    "backgroundColor": "rgba(191, 220, 255, 0.2)"
+  }, {
     ".dark &": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(117, 179, 255, var(--tw-border-opacity))",
       "backgroundColor": "rgba(117, 179, 255, 0.1)"
     }
-  }], type === 'danger' && [{
+  }];
+});
+var RootDanger = (0, _styledComponents["default"])(Root)(function (_ref13) {
+  _objectDestructuringEmpty(_ref13);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(249, 203, 203, var(--tw-border-opacity))",
-    "backgroundColor": "rgba(249, 203, 203, 0.2)",
+    "backgroundColor": "rgba(249, 203, 203, 0.2)"
+  }, {
     ".dark &": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(242, 142, 142, var(--tw-border-opacity))",
       "backgroundColor": "rgba(242, 142, 142, 0.1)"
     }
-  }], type === 'warning' && [{
+  }];
+});
+var RootWarning = (0, _styledComponents["default"])(Root)(function (_ref14) {
+  _objectDestructuringEmpty(_ref14);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(250, 218, 188, var(--tw-border-opacity))",
-    "backgroundColor": "rgba(250, 218, 188, 0.2)",
+    "backgroundColor": "rgba(250, 218, 188, 0.2)"
+  }, {
     ".dark &": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(245, 175, 110, var(--tw-border-opacity))",
       "backgroundColor": "rgba(245, 175, 110, 0.1)"
     }
-  }], type === 'tip' && [{
+  }];
+});
+var RootTip = (0, _styledComponents["default"])(Root)(function (_ref15) {
+  _objectDestructuringEmpty(_ref15);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(206, 176, 250, var(--tw-border-opacity))",
-    "backgroundColor": "rgba(206, 176, 250, 0.2)",
+    "backgroundColor": "rgba(206, 176, 250, 0.2)"
+  }, {
     ".dark &": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(150, 84, 244, var(--tw-border-opacity))",
       "backgroundColor": "rgba(150, 84, 244, 0.1)"
     }
-  }], type === 'bug' && [{
+  }];
+});
+var RootBug = (0, _styledComponents["default"])(Root)(function (_ref16) {
+  _objectDestructuringEmpty(_ref16);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(250, 218, 188, var(--tw-border-opacity))",
-    "backgroundColor": "rgba(250, 218, 188, 0.2)",
+    "backgroundColor": "rgba(250, 218, 188, 0.2)"
+  }, {
     ".dark &": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(245, 175, 110, var(--tw-border-opacity))",
       "backgroundColor": "rgba(245, 175, 110, 0.1)"
     }
-  }], type === 'note' && [{
+  }];
+});
+var RootNote = (0, _styledComponents["default"])(Root)(function (_ref17) {
+  _objectDestructuringEmpty(_ref17);
+
+  return [{
     "--tw-border-opacity": "1",
     "borderColor": "rgba(223, 225, 226, var(--tw-border-opacity))",
-    "backgroundColor": "rgba(223, 225, 226, 0.2)",
+    "backgroundColor": "rgba(223, 225, 226, 0.2)"
+  }, {
     ".dark &": {
       "backgroundColor": "rgba(250, 250, 250, 0.05)"
     }
-  }]];
+  }];
 });
 
-var Header = _styledComponents["default"].div(function (_ref3) {
-  var type = _ref3.type;
+var Header = _styledComponents["default"].div(function (_ref18) {
+  var type = _ref18.type;
   return [{
     "display": "flex",
     "alignItems": "center",
     "fontWeight": "500",
     "fontSize": "1.125rem",
-    "lineHeight": "28px",
+    "paddingTop": "1rem",
+    "paddingLeft": "1rem",
+    "paddingRight": "1rem"
+  }];
+});
+
+var HeaderDefault = (0, _styledComponents["default"])(Header)(function (_ref19) {
+  var type = _ref19.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(21, 24, 25, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(201, 205, 207, var(--tw-text-opacity))"
-    },
-    "paddingTop": "1rem",
-    "paddingLeft": "1rem",
-    "paddingRight": "1rem"
-  }, type === 'success' && [{
+    }
+  }];
+});
+var HeaderSuccess = (0, _styledComponents["default"])(Header)(function (_ref20) {
+  var type = _ref20.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(0, 194, 206, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(51, 206, 216, var(--tw-text-opacity))"
-    },
-    ":focus": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(51, 206, 216, var(--tw-text-opacity))"
     }
-  }], type === 'info' && [{
+  }];
+});
+var HeaderInfo = (0, _styledComponents["default"])(Header)(function (_ref21) {
+  var type = _ref21.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(49, 141, 255, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(117, 179, 255, var(--tw-text-opacity))"
-    },
-    ":focus": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(90, 164, 255, var(--tw-text-opacity))"
     }
-  }], type === 'danger' && [{
+  }];
+});
+var HeaderDanger = (0, _styledComponents["default"])(Header)(function (_ref22) {
+  var type = _ref22.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(235, 87, 87, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(239, 121, 121, var(--tw-text-opacity))"
-    },
-    ":focus": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(239, 121, 121, var(--tw-text-opacity))"
     }
-  }], type === 'warning' && [{
+  }];
+});
+var HeaderWarning = (0, _styledComponents["default"])(Header)(function (_ref23) {
+  var type = _ref23.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(240, 135, 39, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(243, 159, 82, var(--tw-text-opacity))"
-    },
-    ":focus": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(243, 159, 82, var(--tw-text-opacity))"
     }
-  }], type === 'tip' && [{
+  }];
+});
+var HeaderTip = (0, _styledComponents["default"])(Header)(function (_ref24) {
+  var type = _ref24.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(98, 0, 238, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(206, 176, 250, var(--tw-text-opacity))"
-    },
-    ":focus": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(206, 176, 250, var(--tw-text-opacity))"
     }
-  }], type === 'bug' && [{
+  }];
+});
+var HeaderBug = (0, _styledComponents["default"])(Header)(function (_ref25) {
+  var type = _ref25.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(240, 135, 39, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(243, 159, 82, var(--tw-text-opacity))"
-    },
-    ":focus": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(243, 159, 82, var(--tw-text-opacity))"
     }
-  }], type === 'note' && [{
+  }];
+});
+var HeaderNote = (0, _styledComponents["default"])(Header)(function (_ref26) {
+  var type = _ref26.type;
+  return [{
     "--tw-text-opacity": "1",
     "color": "rgba(21, 24, 25, var(--tw-text-opacity))",
     ".dark &": {
       "--tw-text-opacity": "1",
       "color": "rgba(255, 255, 255, var(--tw-text-opacity))"
-    },
-    ":focus": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(255, 255, 255, var(--tw-text-opacity))"
     }
-  }]];
+  }];
 });
 
-var Text = _styledComponents["default"].div(function (_ref4) {
-  var isSuccess = _ref4.isSuccess,
-      isInfo = _ref4.isInfo,
-      isDanger = _ref4.isDanger,
-      isWarning = _ref4.isWarning;
+var Text = _styledComponents["default"].div(function (_ref27) {
+  _objectDestructuringEmpty(_ref27);
+
   return [{
     "fontWeight": "500",
     "--tw-text-opacity": "1",

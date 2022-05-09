@@ -91,7 +91,7 @@ var BreadcrumbsBarRoot = _styledComponents["default"].div(function (_ref2) {
     "paddingRight": "1rem"
   }, {
     "borderBottomWidth": "1px",
-    "borderColor": "var(--border-secondary)"
+    "borderColor": "var(--border-body)"
   }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    a.active {\n      ", "\n    }\n    .home-icon {\n      ", "\n    }\n    .divider {\n      ", "\n      display: inline;\n      line-height: 100%;\n    }\n    .inner-chevron-right, .divider {\n      ", "\n    }\n  "])), {
     "--tw-text-opacity": "1",
     "color": "rgba(0, 194, 206, var(--tw-text-opacity))"
@@ -99,9 +99,8 @@ var BreadcrumbsBarRoot = _styledComponents["default"].div(function (_ref2) {
     "position": "relative",
     "top": "-1px"
   }, {
-    "fontSize": "0.875rem",
-    "lineHeight": "20px",
-    "color": "var(--text-quaternary)"
+    "fontSize": "0.8125rem",
+    "color": "var(--text-tertiary)"
   }, {
     "marginLeft": "10px",
     "marginRight": "10px"

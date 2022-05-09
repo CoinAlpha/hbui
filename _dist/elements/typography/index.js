@@ -21,18 +21,12 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var sharedTransforms = function sharedTransforms(props) {
   return [{
-    "--tw-text-opacity": "1",
-    "color": "rgba(0, 0, 0, var(--tw-text-opacity))",
-    ".dark &": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(255, 255, 255, var(--tw-text-opacity))"
-    }
+    "color": "var(--text-primary)"
   }, {
     "margin": "0px",
     "fontWeight": "400"
   }, props.isSmall && {
-    "fontSize": "0.875rem",
-    "lineHeight": "20px"
+    "fontSize": "0.8125rem"
   }, props.isUnderline && {
     "textDecoration": "underline"
   }, props.isUppercase && {
@@ -89,8 +83,7 @@ exports.PNano = PNano;
 
 var PTiny = _styledComponents["default"].p({}, function (props) {
   return [{
-    "fontSize": "0.8125rem",
-    "lineHeight": "16px"
+    "fontSize": "0.75rem"
   }];
 }, sharedTransforms);
 
@@ -98,8 +91,7 @@ exports.PTiny = PTiny;
 
 var PSmall = _styledComponents["default"].p({}, function (props) {
   return [{
-    "fontSize": "0.875rem",
-    "lineHeight": "20px"
+    "fontSize": "0.8125rem"
   }];
 }, sharedTransforms);
 
@@ -107,11 +99,9 @@ exports.PSmall = PSmall;
 
 var P = _styledComponents["default"].p({}, function (props) {
   return [{
-    "fontSize": "1rem",
-    "lineHeight": "24px",
+    "fontSize": "0.9375rem",
     "@media (min-width: 976px)": {
-      "fontSize": "1.125rem",
-      "lineHeight": "28px"
+      "fontSize": "1.125rem"
     }
   }];
 }, sharedTransforms);
@@ -122,11 +112,9 @@ var Body = _styledComponents["default"].p({}, function (props) {
   return [{
     "paddingBottom": "0.25rem",
     "fontSize": "1.125rem",
-    "lineHeight": "28px",
     "@media (min-width: 768px)": {
       "paddingBottom": "2rem",
-      "fontSize": "1.25rem",
-      "lineHeight": "28px"
+      "fontSize": "1.25rem"
     }
   }];
 }, sharedTransforms);
@@ -136,14 +124,11 @@ exports.Body = Body;
 var H6 = _styledComponents["default"].h6({}, function (props) {
   return [{
     "fontSize": "1.125rem",
-    "lineHeight": "28px",
     "@media (min-width: 768px)": {
-      "fontSize": "1.25rem",
-      "lineHeight": "28px"
+      "fontSize": "1.25rem"
     },
     "@media (min-width: 976px)": {
-      "fontSize": "1.5rem",
-      "lineHeight": "32px"
+      "fontSize": "1.5rem"
     }
   }];
 }, sharedTransforms);
@@ -153,14 +138,11 @@ exports.H6 = H6;
 var H5 = _styledComponents["default"].h5({}, function (props) {
   return [{
     "fontSize": "1.25rem",
-    "lineHeight": "28px",
     "@media (min-width: 768px)": {
-      "fontSize": "1.5rem",
-      "lineHeight": "32px"
+      "fontSize": "1.5rem"
     },
     "@media (min-width: 976px)": {
-      "fontSize": "1.875rem",
-      "lineHeight": "36px"
+      "fontSize": "1.875rem"
     }
   }, {
     "letterSpacing": "0em"
@@ -172,14 +154,11 @@ exports.H5 = H5;
 var H4 = _styledComponents["default"].h4({}, function (props) {
   return [{
     "fontSize": "1.5rem",
-    "lineHeight": "32px",
     "@media (min-width: 768px)": {
-      "fontSize": "1.875rem",
-      "lineHeight": "36px"
+      "fontSize": "1.875rem"
     },
     "@media (min-width: 976px)": {
-      "fontSize": "2.25rem",
-      "lineHeight": "40px"
+      "fontSize": "2.25rem"
     }
   }, {
     "letterSpacing": "0em"
@@ -191,14 +170,11 @@ exports.H4 = H4;
 var H3 = _styledComponents["default"].h3({}, function (props) {
   return [{
     "fontSize": "1.875rem",
-    "lineHeight": "36px",
     "@media (min-width: 768px)": {
-      "fontSize": "2.25rem",
-      "lineHeight": "40px"
+      "fontSize": "2.25rem"
     },
     "@media (min-width: 976px)": {
-      "fontSize": "3rem",
-      "lineHeight": "48px"
+      "fontSize": "3rem"
     }
   }, {
     "letterSpacing": "-0.025em"
@@ -210,14 +186,11 @@ exports.H3 = H3;
 var H2 = _styledComponents["default"].h2({}, function (props) {
   return [{
     "fontSize": "2.25rem",
-    "lineHeight": "40px",
     "@media (min-width: 768px)": {
-      "fontSize": "3rem",
-      "lineHeight": "48px"
+      "fontSize": "3rem"
     },
     "@media (min-width: 976px)": {
-      "fontSize": "3.75rem",
-      "lineHeight": "60px"
+      "fontSize": "3.75rem"
     }
   }, {
     "letterSpacing": "-0.025em"
@@ -229,14 +202,11 @@ exports.H2 = H2;
 var H1 = _styledComponents["default"].h1({}, function (props) {
   return [{
     "fontSize": "3rem",
-    "lineHeight": "48px",
     "@media (min-width: 768px)": {
-      "fontSize": "3.75rem",
-      "lineHeight": "60px"
+      "fontSize": "3.75rem"
     },
     "@media (min-width: 976px)": {
-      "fontSize": "4.5rem",
-      "lineHeight": "72px"
+      "fontSize": "4.5rem"
     }
   }, {
     "letterSpacing": "-0.025em"
@@ -305,10 +275,7 @@ var FieldLabel = (0, _styledComponents["default"])(P)({
   lineHeight: '1 !important'
 });
 var labelStyles = [{
-  "color": "var(--text-quintenary)",
-  ".dark &": {
-    "color": "var(--text-quintenary)"
-  }
+  "color": "var(--text-tertiary)"
 }, {
   "fontWeight": "500"
 }, {

@@ -1,12 +1,15 @@
 "use strict";
 
-var _borderRadius;
+var _borderRadius, _textColor;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var tokens = require('../tokens');
 
-var colors = require('../constants/colors');
+var colors = tokens.colors;
+var colorsDark = colors.dark;
+var colorsLight = colors.light;
+var colorPalettes = colors['color-palettes'];
 
 var breakpoints = require('../constants/breakpoints');
 
@@ -14,39 +17,17 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontSize: {
-      'xs': [tokens.fontSize['text-xs'], {
-        lineHeight: tokens.lineHeight['text-xs']
-      }],
-      'sm': [tokens.fontSize['text-sm'], {
-        lineHeight: tokens.lineHeight['text-sm']
-      }],
-      'base': [tokens.fontSize['text-base'], {
-        lineHeight: tokens.lineHeight['text-base']
-      }],
-      'lg': [tokens.fontSize['text-lg'], {
-        lineHeight: tokens.lineHeight['text-lg']
-      }],
-      'xl': [tokens.fontSize['text-xl'], {
-        lineHeight: tokens.lineHeight['text-xl']
-      }],
-      '2xl': [tokens.fontSize['text-2-xl'], {
-        lineHeight: tokens.lineHeight['text-2-xl']
-      }],
-      '3xl': [tokens.fontSize['text-3-xl'], {
-        lineHeight: tokens.lineHeight['text-3-xl']
-      }],
-      '4xl': [tokens.fontSize['text-4-xl'], {
-        lineHeight: tokens.lineHeight['text-4-xl']
-      }],
-      '5xl': [tokens.fontSize['text-5-xl'], {
-        lineHeight: tokens.lineHeight['text-5-xl']
-      }],
-      '6xl': [tokens.fontSize['text-6-xl'], {
-        lineHeight: tokens.lineHeight['text-6-xl']
-      }],
-      '7xl': [tokens.fontSize['text-7-xl'], {
-        lineHeight: tokens.lineHeight['text-7-xl']
-      }]
+      'xs': tokens.fontSize['text-xs'],
+      'sm': tokens.fontSize['text-sm'],
+      'base': tokens.fontSize['text-base'],
+      'lg': tokens.fontSize['text-lg'],
+      'xl': tokens.fontSize['text-xl'],
+      '2xl': tokens.fontSize['text-2-xl'],
+      '3xl': tokens.fontSize['text-3-xl'],
+      '4xl': tokens.fontSize['text-4-xl'],
+      '5xl': tokens.fontSize['text-5-xl'],
+      '6xl': tokens.fontSize['text-6-xl'],
+      '7xl': tokens.fontSize['text-7-xl']
     },
     screens: {
       'sm': "".concat(breakpoints['sm'], "px"),
@@ -80,69 +61,108 @@ module.exports = {
       current: 'currentColor',
       'black': colors.black,
       'white': colors.white,
-      'primary': colors.brand,
-      'brand': colors.brand,
-      'green': colors.green_scale['500'],
-      'red': colors.red_scale['500'],
-      'blue': colors.blue_scale['500'],
-      'yellow': colors.yellow_scale['500'],
-      'purple': colors.purple_scale['500'],
-      'magenta': colors.magenta_scale['500'],
-      'orange': colors.orange_scale['500'],
-      'success-hovered': colors.success_hovered,
-      'success-active': colors.success_active,
-      'info-hovered': colors.info_hovered,
-      'info-active': colors.info_active,
-      'danger-hovered': colors.danger_hovered,
-      'danger-active': colors.danger_active,
-      'warning-hovered': colors.warning_hovered,
-      'warning-active': colors.warning_active,
-      'grey-light': colors.grey_light,
-      'grey-dark': colors.grey_dark
+      'terminal': colors.terminal,
+      'green': tokens.colors['color-palettes'].green['500'],
+      'red': tokens.colors['color-palettes'].red['500'],
+      'blue': tokens.colors['color-palettes'].blue['500'],
+      'yellow': tokens.colors['color-palettes'].yellow['500'],
+      'purple': tokens.colors['color-palettes'].purple['500'],
+      'magenta': tokens.colors['color-palettes'].magenta['500'],
+      'orange': tokens.colors['color-palettes'].orange['500'],
+      'success': tokens.colors['color-palettes'].green['500'],
+      'danger': tokens.colors['color-palettes'].red['500'],
+      'info': tokens.colors['color-palettes'].blue['500'],
+      'warning': tokens.colors['color-palettes'].orange['500']
     },
     extend: {
-      // extended colors
       colors: {
-        'brand-ui': colors.brand_scale,
-        'green-ui': colors.green_scale,
-        'red-ui': colors.red_scale,
-        'blue-ui': colors.blue_scale,
-        'yellow-ui': colors.yellow_scale,
-        'purple-ui': colors.purple_scale,
-        'magenta-ui': colors.magenta_scale,
-        'orange-ui': colors.orange_scale
+        'brand-scale': colorPalettes.brand,
+        'green-scale': colorPalettes.green,
+        'red-scale': colorPalettes.red,
+        'blue-scale': colorPalettes.blue,
+        'yellow-scale': colorPalettes.yellow,
+        'purple-scale': colorPalettes.purple,
+        'magenta-scale': colorPalettes.magenta,
+        'orange-scale': colorPalettes.orange,
+        'grey-light-scale': colorPalettes['grey-light'],
+        'grey-dark-scale': colorPalettes['grey-dark']
       },
       spacing: tokens.spacing,
       backgroundColor: {
-        brand: "var(--bg-brand)",
-        primary: "var(--bg-primary)",
-        secondary: "var(--bg-secondary)",
-        tertiary: "var(--bg-tertiary)",
-        quaternary: "var(--bg-quaternary)",
-        quintenary: "var(--bg-quintenary)"
+        body: "var(--bg-body)",
+        window: "var(--bg-window)",
+        button: "var(--bg-button)",
+        "button-hover": "var(--bg-button-hover)",
+        "button-active": "var(--bg-button-active)",
+        "button-secondary": "var(--bg-button-secondary)",
+        "button-secondary-hover": "var(--bg-button-secondary-hover)",
+        "button-secondary-active": "var(--bg-button-secondary-active)",
+        "success-hover": "var(--bg-success-hover)",
+        "success-active": "var(--bg-success-active)",
+        "info-hover": "var(--bg-info-hover)",
+        "info-active": "var(--bg-info-active)",
+        "warning-hover": "var(--bg-warning-hover)",
+        "warning-active": "var(--bg-warning-active)",
+        "danger-hover": "var(--bg-danger-hover)",
+        "danger-active": "var(--bg-danger-active)",
+        navbutton: "var(--bg-navbutton)",
+        "navbutton-hover": "var(--bg-navbutton-hover)",
+        "navbutton-active": "var(--bg-navbutton-active)",
+        input: "var(--bg-input)",
+        "input-focus": "var(--bg-input-focus)",
+        "input-hover": "var(--bg-input-hover)"
       },
-      borderColor: {
-        brand: "var(--border-brand)",
-        primary: "var(--border-primary)",
-        secondary: "var(--border-secondary)",
-        tertiary: "var(--border-tertiary)",
-        quaternary: "var(--border-quaternary)",
-        quintenary: "var(--border-quintenary)"
-      },
-      textColor: {
-        brand: "var(--text-brand)",
+      textColor: (_textColor = {
         primary: "var(--text-primary)",
         secondary: "var(--text-secondary)",
         tertiary: "var(--text-tertiary)",
-        quaternary: "var(--text-quaternary)",
-        quintenary: "var(--text-quintenary)",
-        dim: "var(--text-dim)"
-      },
-      fillColor: {
-        brand: "var(--fill-brand)",
-        primary: "var(--fill-primary)",
-        secondary: "var(--fill-secondary)",
-        tertiary: "var(--fill-tertiary)"
+        button: "var(--text-button)",
+        "button-hover": "var(--text-button-hover)",
+        "button-active": "var(--text-button-active)",
+        "button-secondary": "var(--text-button-secondary)",
+        "button-secondary-hover": "var(--text-button-secondary-hover)",
+        "button-secondary-active": "var(--text-button-secondary-active)",
+        "button-success": "var(--text-button-success)",
+        "button-success-hover": "var(--text-button-success-hover)",
+        "button-success-active": "var(--text-button-success-active)",
+        "button-info": "var(--text-button-info)",
+        "button-info-hover": "var(--text-button-info-hover)",
+        "button-info-active": "var(--text-button-info-active)",
+        "button-warning": "var(--text-button-warning)",
+        "button-warning-hover": "var(--text-button-warning-hover)",
+        "button-warning-active": "var(--text-button-warning-active)",
+        "button-danger": "var(--text-button-danger)",
+        "button-danger-hover": "var(--text-button-danger-hover)",
+        "button-danger-active": "var(--text-button-danger-active)",
+        input: "var(--text-input)",
+        navbutton: "var(--text-navbutton)",
+        "navbutton-hover": "var(--text-navbutton-hover)",
+        "navbutton-active": "var(--text-navbutton-active)"
+      }, _defineProperty(_textColor, "input", "var(--text-input)"), _defineProperty(_textColor, "input-focus", "var(--text-input-focus)"), _defineProperty(_textColor, "input-hover", "var(--text-input-hover)"), _textColor),
+      borderColor: {
+        body: "var(--border-body)",
+        window: "var(--border-window)",
+        button: "var(--border-button)",
+        "button-hover": "var(--border-button-hover)",
+        "button-active": "var(--border-button-active)",
+        "button-secondary": "var(--border-button-secondary)",
+        "button-secondary-hover": "var(--border-button-secondary-hover)",
+        "button-secondary-active": "var(--border-button-secondary-active)",
+        "button-success": "var(--border-button-success)",
+        "button-success-hover": "var(--border-button-success-hover)",
+        "button-success-active": "var(--border-button-success-active)",
+        "button-info": "var(--border-button-info)",
+        "button-info-hover": "var(--border-button-info-hover)",
+        "button-info-active": "var(--border-button-info-active)",
+        "button-warning": "var(--border-button-warning)",
+        "button-warning-hover": "var(--border-button-warning-hover)",
+        "button-warning-active": "var(--border-button-warning-active)",
+        "button-danger": "var(--border-button-danger)",
+        "button-danger-hover": "var(--border-button-danger-hover)",
+        "button-danger-active": "var(--border-button-danger-active)",
+        input: "var(--border-input)",
+        "input-focus": "var(--border-input-focus)",
+        "input-hover": "var(--border-input-hover)"
       }
     }
   },

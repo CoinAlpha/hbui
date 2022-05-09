@@ -10,86 +10,168 @@ import TipIcon from '../../assets/svgs/notifications/TipIcon'
 import BugIcon from '../../assets/svgs/notifications/BugIcon'
 import NoteIcon from '../../assets/svgs/notifications/NoteIcon'
 
-const Callout = ({ title, text, type, ...props }) => {
-  const stateIcon = getStateIcon(type)
+export const Callout = ({ title, text, ...props }) => {
   return (
-    <Root type={type} {...props}>
-      <Header type={type}>
-        {stateIcon} {title}
-      </Header>
+    <RootDefault {...props}>
+      <HeaderDefault>
+        {title}
+      </HeaderDefault>
       <Text className="text">{text}</Text>
-    </Root>
+    </RootDefault>
   )
 }
 
-export default Callout
+export const CalloutSuccess = ({ title, text, ...props }) => {
+  return (
+    <RootSuccess {...props}>
+      <HeaderSuccess>
+        <CheckIcon /> {title}
+      </HeaderSuccess>
+      <Text className="text">{text}</Text>
+    </RootSuccess>
+  )
+}
 
-const getStateIcon = type => {
-  if (type === 'success') return <CheckIcon />
-  if (type === 'warning') return <WarningIcon />
-  if (type === 'danger') return <ErrorIcon />
-  if (type === 'info') return <InfoIcon />
-  if (type === 'tip') return <TipIcon />
-  if (type === 'bug') return <BugIcon />
-  if (type === 'note') return <NoteIcon />
-  return null
+export const CalloutInfo = ({ title, text, ...props }) => {
+  return (
+    <RootInfo {...props}>
+      <HeaderInfo>
+        <InfoIcon /> {title}
+      </HeaderInfo>
+      <Text className="text">{text}</Text>
+    </RootInfo>
+  )
+}
+
+export const CalloutWarning = ({ title, text, ...props }) => {
+  return (
+    <RootWarning {...props}>
+      <HeaderWarning>
+        <WarningIcon /> {title}
+      </HeaderWarning>
+      <Text className="text">{text}</Text>
+    </RootWarning>
+  )
+}
+
+export const CalloutDanger = ({ title, text, ...props }) => {
+  return (
+    <RootDanger {...props}>
+      <HeaderDanger>
+        <ErrorIcon /> {title}
+      </HeaderDanger>
+      <Text className="text">{text}</Text>
+    </RootDanger>
+  )
+}
+
+export const CalloutTip = ({ title, text, ...props }) => {
+  return (
+    <RootTip {...props}>
+      <HeaderTip>
+        <TipIcon /> {title}
+      </HeaderTip>
+      <Text className="text">{text}</Text>
+    </RootTip>
+  )
+}
+
+export const CalloutBug = ({ title, text, ...props }) => {
+  return (
+    <RootBug {...props}>
+      <HeaderBug>
+        <BugIcon /> {title}
+      </HeaderBug>
+      <Text className="text">{text}</Text>
+    </RootBug>
+  )
+}
+
+export const CalloutNote = ({ title, text, ...props }) => {
+  return (
+    <RootNote {...props}>
+      <HeaderNote>
+        <NoteIcon /> {title}
+      </HeaderNote>
+      <Text className="text">{text}</Text>
+    </RootNote>
+  )
 }
 
 const Root = styled.div(({ type }) => [
-  tw`rounded border-solid border-l-8 border-r border-b border-t border-grey-light-400 bg-grey-light-200 dark:bg-grey-light-100/5`,
+  tw`rounded border-solid border-l-8 border-r border-b border-t`,
   css`
     svg {
       margin-right: 10px;
     }
   `,
-  type === 'success' && [
-    tw`border-green-ui-100 bg-green-ui-100/20 dark:border-green-ui-300 dark:bg-green-ui-300/10`,
-  ],
-  type === 'info' && [
-    tw`border-blue-ui-100 bg-blue-ui-100/20 dark:border-blue-ui-300 dark:bg-blue-ui-300/10`,
-  ],
-  type === 'danger' && [
-    tw`border-red-ui-100 bg-red-ui-100/20 dark:border-red-ui-300 dark:bg-red-ui-300/10`,
-  ],
-  type === 'warning' && [
-    tw`border-orange-ui-100 bg-orange-ui-100/20 dark:border-orange-ui-300 dark:bg-orange-ui-300/10`,
-  ],
-  type === 'tip' && [
-    tw`border-purple-ui-100 bg-purple-ui-100/20 dark:border-purple-ui-300 dark:bg-purple-ui-300/10`,
-  ],
-  type === 'bug' && [
-    tw`border-orange-ui-100 bg-orange-ui-100/20 dark:border-orange-ui-300 dark:bg-orange-ui-300/10`,
-  ],
-  type === 'note' && [
-    tw`border-grey-light-400 bg-grey-light-400/20 dark:bg-grey-light-100/5`,
-  ],
+])
+
+const RootDefault = styled(Root)(({}) => [
+  tw`border-grey-light-scale-400 bg-grey-light-scale-200`,
+  tw`dark:bg-grey-light-scale-100/5`,
+])
+
+const RootSuccess = styled(Root)(({}) => [
+  tw`border-green-scale-100 bg-green-scale-100/20`,
+  tw`dark:border-green-scale-300 dark:bg-green-scale-500/10`,
+])
+const RootInfo = styled(Root)(({}) => [
+  tw`border-blue-scale-100 bg-blue-scale-100/20`,
+  tw`dark:border-blue-scale-300 dark:bg-blue-scale-300/10`,
+])
+const RootDanger = styled(Root)(({}) => [
+  tw`border-red-scale-100 bg-red-scale-100/20`,
+  tw`dark:border-red-scale-300 dark:bg-red-scale-300/10`,
+])
+const RootWarning = styled(Root)(({}) => [
+  tw`border-orange-scale-100 bg-orange-scale-100/20`,
+  tw`dark:border-orange-scale-300 dark:bg-orange-scale-300/10`,
+])
+const RootTip = styled(Root)(({}) => [
+  tw`border-purple-scale-100 bg-purple-scale-100/20`,
+  tw`dark:border-purple-scale-300 dark:bg-purple-scale-300/10`,
+])
+const RootBug = styled(Root)(({}) => [
+  tw`border-orange-scale-100 bg-orange-scale-100/20`,
+  tw`dark:border-orange-scale-300 dark:bg-orange-scale-300/10`,
+])
+const RootNote = styled(Root)(({}) => [
+  tw`border-grey-light-scale-400 bg-grey-light-scale-400/20`,
+  tw`dark:bg-grey-light-scale-100/5`,
 ])
 
 const Header = styled.div(({ type }) => [
-  tw`flex items-center font-medium text-lg text-grey-dark-700 dark:text-grey-light-500 pt-4 px-4 `,
-  type === 'success' && [
-    tw`text-green-ui-500 dark:text-green-ui-400 focus:text-green-ui-400`,
-  ],
-  type === 'info' && [
-    tw`text-blue-ui-500 dark:text-blue-ui-300 focus:text-blue-ui-400`,
-  ],
-  type === 'danger' && [
-    tw`text-red-ui-500 dark:text-red-ui-400 focus:text-red-ui-400`,
-  ],
-  type === 'warning' && [
-    tw`text-orange-ui-500 dark:text-orange-ui-400 focus:text-orange-ui-400`,
-  ],
-  type === 'tip' && [
-    tw`text-purple-ui-500 dark:text-purple-ui-100 focus:text-purple-ui-100`,
-  ],
-  type === 'bug' && [
-    tw`text-orange-ui-500 dark:text-orange-ui-400 focus:text-orange-ui-400`,
-  ],
-  type === 'note' && [tw`text-grey-dark-700 dark:text-white focus:text-white`],
+  tw`flex items-center font-medium text-lg pt-4 px-4`,
 ])
 
-const Text = styled.div(({ isSuccess, isInfo, isDanger, isWarning }) => [
-  tw`font-medium text-grey-dark-200 dark:text-white px-4 pb-4 pt-2`,
+const HeaderDefault = styled(Header)(({ type }) => [
+  tw`text-grey-dark-scale-700 dark:text-grey-light-scale-500`,
+])
+const HeaderSuccess = styled(Header)(({ type }) => [
+  tw`text-green-scale-500 dark:text-green-scale-400`,
+])
+const HeaderInfo = styled(Header)(({ type }) => [
+  tw`text-blue-scale-500 dark:text-blue-scale-300`,
+])
+const HeaderDanger = styled(Header)(({ type }) => [
+  tw`text-red-scale-500 dark:text-red-scale-400`,
+])
+const HeaderWarning = styled(Header)(({ type }) => [
+  tw`text-orange-scale-500 dark:text-orange-scale-400`,
+])
+const HeaderTip = styled(Header)(({ type }) => [
+  tw`text-purple-scale-500 dark:text-purple-scale-100`,
+])
+const HeaderBug = styled(Header)(({ type }) => [
+  tw`text-orange-scale-500 dark:text-orange-scale-400`,
+])
+const HeaderNote = styled(Header)(({ type }) => [
+  tw`text-grey-dark-scale-700 dark:text-white`
+])
+
+const Text = styled.div(({}) => [
+  tw`font-medium text-grey-dark-scale-200 dark:text-white px-4 pb-4 pt-2`,
   css`
     a {
       text-decoration: underline;

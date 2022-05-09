@@ -59,16 +59,16 @@ const BreadcrumbsBarRoot = styled.div(({ isUppercase, isDisabled }) => [
   tw`flex w-full relative`,
   tw`items-center`,
   tw`relative py-2.5 px-4`,
-  tw`border-b border-secondary`,
+  tw`border-b border-body`,
   css`
     a.active {
-      ${tw`text-brand-ui-500`}
+      ${tw`text-brand-scale-500`}
     }
     .home-icon {
       ${tw`relative top-[-1px]`}
     }
     .divider {
-      ${tw`text-sm text-quaternary`}
+      ${tw`text-sm text-tertiary`}
       display: inline;
       line-height: 100%;
     }

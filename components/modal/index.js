@@ -7,7 +7,7 @@ import {
 function Modal({content, path, closeFunction}) {
   return (
     <div tw='z-50 fixed top-0 left-0 w-full h-full bg-black/80 flex items-center justify-center'>
-      <div tw='relative w-1/3 bg-primary p-sm'>
+      <div tw='relative w-1/3 bg-body p-sm'>
         <div tw='flex justify-between'>
           {path && <PSmall isMedium tw='mb-sm'>{path}</PSmall>}
           <CloseIcon

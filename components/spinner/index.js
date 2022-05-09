@@ -29,7 +29,7 @@ function Spinner({ color, radius, style, duration, strokeWidth, center, ...props
       >
         <g fill="none" transform="translate(3 3)" strokeWidth="3">
           <circle
-            tw="stroke-current text-grey-light-400 dark:text-grey-dark-300"
+            tw="stroke-current text-grey-light-scale-400 dark:text-grey-dark-scale-300"
             cx="18"
             cy="18"
             r="18"

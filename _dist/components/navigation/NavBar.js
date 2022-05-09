@@ -88,7 +88,7 @@ var NavBarRoot = _styledComponents["default"].div(function (_ref2) {
     "paddingRight": "1rem"
   }, {
     "borderBottomWidth": "1px",
-    "borderColor": "var(--border-secondary)"
+    "borderColor": "var(--border-body)"
   }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    .chip {\n      ", ";\n    }\n    .theme-toggle {\n      ", ";\n    }\n  "])), {
     "marginRight": "0.25rem"
   }, {
@@ -133,8 +133,7 @@ var RightSide = _styledComponents["default"].div(function (_ref5) {
     "marginLeft": "0.5rem",
     "padding": "0px",
     "fontWeight": "500",
-    "fontSize": "1rem",
-    "lineHeight": "24px"
+    "fontSize": "0.9375rem"
   })];
 });
 

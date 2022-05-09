@@ -18,7 +18,7 @@ const ChipRoot = styled.span(({ isUppercase, isDisabled }) => [
   tw`flex`,
   css`
     a.active {
-      ${tw`bg-tertiary`};
+      ${tw`bg-input`};
     }
   `,
   isUppercase && [
@@ -35,10 +35,9 @@ const ChipElement = styled(NavLink)(({}) => [
   tw`flex`,
   tw`transition duration-100`,
   tw`px-2 rounded focus:outline-none`,
-  tw`bg-transparent hover:bg-tertiary active:bg-quaternary`,
-  // tw`bg-transparent border border-primary border-2 hover:bg-tertiary active:bg-quaternary`,
+  tw`bg-transparent hover:bg-button active:bg-button-hover`,
   tw`font-medium`,
-  tw`text-tertiary`,
+  tw`text-button`,
   tw`text-base`,
   css`
     text-align: center;

@@ -51,48 +51,48 @@ const ButtonBase = styled.button(
 
 export const Button = styled(ButtonBase)(
   ({}) => [
-    tw`text-tertiary dark:text-secondary`,
-    tw`bg-tertiary hover:bg-quaternary active:bg-quintenary`,
-    tw`border-primary hover:border-tertiary active:border-quaternary`,
+    tw`text-button hover:text-button-hover`,
+    tw`bg-button hover:bg-button-hover active:bg-button-active`,
+    tw`border-button hover:border-button-hover active:border-button-active`,
   ],
 )
 
 export const ButtonSecondary = styled(ButtonBase)(
   ({}) => [
-    tw`text-tertiary dark:text-secondary`,
-    tw`bg-transparent hover:bg-transparent active:bg-tertiary`,
-    tw`border-secondary hover:border-quaternary active:border-quaternary`,
+    tw`text-button-secondary hover:text-button-secondary-hover`,
+    tw`bg-button-secondary hover:bg-button-secondary-hover active:bg-button-secondary-active`,
+    tw`border-button-secondary hover:border-button-secondary-hover active:border-button-secondary-active`,
   ],
 )
 
 export const ButtonSuccess = styled(ButtonBase)(
   ({}) => [
-    tw`text-white dark:text-black`,
-    tw`border-green hover:border-green active:border-green`,
-    tw`bg-green hover:bg-success-hovered active:bg-success-active`,
+    tw`text-button-success hover:text-button-success-hover`,
+    tw`bg-success hover:bg-success-hover active:bg-success-active`,
+    tw`border-button-success hover:border-button-success-hover active:border-button-success-active`,
   ],
 )
 
 export const ButtonInfo = styled(ButtonBase)(
   ({}) => [
-    tw`text-white dark:text-black`,
-    tw`border-blue hover:border-blue active:border-blue`,
-    tw`bg-blue hover:bg-info-hovered active:bg-info-active`,
+    tw`text-button-info hover:text-button-info-hover`,
+    tw`bg-info hover:bg-info-hover active:bg-info-active`,
+    tw`border-button-info hover:border-button-info-hover active:border-button-info-active`,
   ],
 )
 
 export const ButtonWarning = styled(ButtonBase)(
   ({}) => [
-    tw`text-white dark:text-black`,
-    tw`border-orange hover:border-orange active:border-orange`,
-    tw`bg-orange hover:bg-warning-hovered active:bg-warning-active`,
+    tw`text-button-warning hover:text-button-warning-hover`,
+    tw`bg-warning hover:bg-warning-hover active:bg-warning-active`,
+    tw`border-button-warning hover:border-button-warning-hover active:border-button-warning-active`,
   ],
 )
 
 export const ButtonDanger = styled(ButtonBase)(
   ({}) => [
-    tw`text-white dark:text-black`,
-    tw`border-red hover:border-red active:border-red`,
-    tw`bg-red hover:bg-danger-hovered active:bg-danger-active`,
+    tw`text-button-danger hover:text-button-danger-hover`,
+    tw`bg-danger hover:bg-danger-hover active:bg-danger-active`,
+    tw`border-button-danger hover:border-button-danger-hover active:border-button-danger-active`,
   ],
 )

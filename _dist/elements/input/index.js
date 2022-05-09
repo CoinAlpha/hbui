@@ -31,13 +31,13 @@ var TextInput = _styledComponents["default"].input(function (_ref) {
       "outlineOffset": "2px"
     }
   }, {
-    "backgroundColor": "var(--bg-primary)"
+    "fontWeight": "400"
   }, {
-    "fontWeight": "400",
-    "color": "var(--text-primary)"
+    "backgroundColor": "var(--bg-input)",
+    "color": "var(--text-input)",
+    "borderColor": "var(--border-input)"
   }, {
     "borderWidth": "2px",
-    "borderColor": "var(--border-secondary)",
     ":focus": {
       "--tw-border-opacity": "1",
       "borderColor": "rgba(49, 141, 255, var(--tw-border-opacity))"

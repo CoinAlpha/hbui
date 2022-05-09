@@ -60,7 +60,7 @@ var ChipRoot = _styledComponents["default"].span(function (_ref2) {
   return [{
     "display": "flex"
   }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    a.active {\n      ", ";\n    }\n  "])), {
-    "backgroundColor": "var(--bg-tertiary)"
+    "backgroundColor": "var(--bg-input)"
   }), isUppercase && [(0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      a {\n        text-transform: uppercase;\n      }\n    "])))], isDisabled && [{
     "pointerEvents": "none",
     "opacity": "0.3"
@@ -87,18 +87,16 @@ var ChipElement = (0, _styledComponents["default"])(_reactRouterDom.NavLink)(fun
   }, {
     "backgroundColor": "rgba(0, 0, 0, 0)",
     ":hover": {
-      "backgroundColor": "var(--bg-tertiary)"
+      "backgroundColor": "var(--bg-button)"
     },
     ":active": {
-      "backgroundColor": "var(--bg-quaternary)"
+      "backgroundColor": "var(--bg-button-hover)"
     }
-  }, // tw`bg-transparent border border-primary border-2 hover:bg-tertiary active:bg-quaternary`,
-  {
+  }, {
     "fontWeight": "500"
   }, {
-    "color": "var(--text-tertiary)"
+    "color": "var(--text-button)"
   }, {
-    "fontSize": "1rem",
-    "lineHeight": "24px"
+    "fontSize": "0.9375rem"
   }, (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    text-align: center;\n    align-items: center;\n    justify-content: center;\n    user-select: none;\n    cursor: pointer;\n  "])))];
 });

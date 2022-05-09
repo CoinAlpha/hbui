@@ -30,28 +30,28 @@ const getStateIcon = (type) => {
 const Root = styled.div(({
   type
 }) => [
-  tw`shadow-xl dark:shadow-xl flex inline-flex overflow-hidden rounded bg-white dark:bg-grey-dark-500`,
+  tw`shadow-xl dark:shadow-xl flex inline-flex overflow-hidden rounded bg-white dark:bg-grey-dark-scale-500`,
   tw`mb-4`,
 ])
 
 const IconBox = styled.div(({
   type
 }) => [
-  tw`flex bg-grey-dark-200 items-center px-3 py-3`,
+  tw`flex bg-grey-dark-scale-200 items-center px-3 py-3`,
   type === 'success' && [
-    tw`bg-green-ui-500`
+    tw`bg-green-scale-500`
   ],
   type === 'info' && [
-    tw`bg-blue-ui-500`
+    tw`bg-blue-scale-500`
   ],
   type === 'danger' && [
-    tw`bg-red-ui-500`
+    tw`bg-red-scale-500`
   ],
   type === 'warning' && [
-    tw`bg-orange-ui-500`
+    tw`bg-orange-scale-500`
   ],
 ])
 
 const Text = styled.div(({}) => [
-  tw`flex font-medium text-grey-dark-200 dark:text-white items-center px-4`,
+  tw`flex font-medium text-grey-dark-scale-200 dark:text-white items-center px-4`,
 ])

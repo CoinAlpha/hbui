@@ -74,18 +74,14 @@ function ComboBox(_ref) {
       },
       "overflow": "hidden",
       "@media (min-width: 480px)": {
-        "fontSize": "0.875rem",
-        "lineHeight": "20px"
+        "fontSize": "0.8125rem"
       }
     }
   }, (0, _react3.jsx)(_react2.Combobox.Input, {
     css: {
       "width": "100%",
-      "backgroundColor": "var(--bg-secondary)",
+      "backgroundColor": "var(--bg-input)",
       "fontWeight": "500",
-      ".dark &": {
-        "backgroundColor": "var(--bg-tertiary)"
-      },
       "borderStyle": "none",
       "outline": "2px solid transparent",
       "outlineOffset": "2px",
@@ -93,7 +89,7 @@ function ComboBox(_ref) {
       "paddingBottom": "0.5rem",
       "paddingLeft": "0.75rem",
       "paddingRight": "2.5rem",
-      "fontSize": "0.875rem",
+      "fontSize": "0.8125rem",
       "lineHeight": "1.25rem",
       "color": "var(--text-secondary)"
     },
@@ -128,12 +124,8 @@ function ComboBox(_ref) {
       "paddingBottom": "0.25rem",
       "marginTop": "0.25rem",
       "overflow": "auto",
-      "fontSize": "1rem",
-      "lineHeight": "24px",
-      "backgroundColor": "var(--bg-primary)",
-      ".dark &": {
-        "backgroundColor": "var(--bg-tertiary)"
-      },
+      "fontSize": "0.9375rem",
+      "backgroundColor": "var(--bg-body)",
       "borderRadius": "0.375rem",
       "--tw-shadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
       "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
@@ -144,8 +136,7 @@ function ComboBox(_ref) {
       },
       "zIndex": "50",
       "@media (min-width: 480px)": {
-        "fontSize": "0.875rem",
-        "lineHeight": "20px"
+        "fontSize": "0.8125rem"
       }
     }
   }, filteredItems.length === 0 && query !== '' ? (0, _react3.jsx)("div", {
@@ -224,13 +215,8 @@ spanStyles[true] = {
   "paddingTop": "0.5rem",
   "paddingBottom": "0.5rem",
   ":hover": {
-    "backgroundColor": "var(--bg-tertiary)",
+    "backgroundColor": "var(--bg-input)",
     "cursor": "pointer"
-  },
-  ".dark &": {
-    ":hover": {
-      "backgroundColor": "var(--bg-quaternary)"
-    }
   }
 };
 spanStyles[false] = {
@@ -244,13 +230,8 @@ spanStyles[false] = {
   "paddingTop": "0.5rem",
   "paddingBottom": "0.5rem",
   ":hover": {
-    "backgroundColor": "var(--bg-tertiary)",
+    "backgroundColor": "var(--bg-input)",
     "cursor": "pointer"
-  },
-  ".dark &": {
-    ":hover": {
-      "backgroundColor": "var(--bg-quaternary)"
-    }
   }
 };
 var spanBStyles = {};

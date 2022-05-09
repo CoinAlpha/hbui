@@ -66,7 +66,6 @@ var TextLinkElement = (0, _styledComponents["default"])(_reactRouterDom.NavLink)
   }, {
     "color": "var(--text-tertiary)"
   }, {
-    "fontSize": "0.875rem",
-    "lineHeight": "20px"
+    "fontSize": "0.8125rem"
   }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    user-select: none;\n    cursor: pointer;\n  "])))];
 });

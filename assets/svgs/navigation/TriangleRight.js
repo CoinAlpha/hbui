@@ -6,7 +6,7 @@ function TriangleRight() {
       xmlns="http://www.w3.org/2000/svg"
       width="4"
       height="8"
-      tw="fill-current text-quintenary"
+      tw="fill-current text-tertiary"
       viewBox="0 0 4 8"
     >
       <path

@@ -4,7 +4,7 @@ import tw, { styled, css } from 'twin.macro'
 function KebabControl({active, ...props}) {
   return (
     <KebabControlRoot active={active}  {...props}>
-      <div tw='absolute top-[-2px] left-[-3px] rounded-sm bg-tertiary w-[16px] h-[20px]' />
+      <div tw='absolute top-[-2px] left-[-3px] rounded-sm bg-input w-[16px] h-[20px]' />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="10"
