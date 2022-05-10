@@ -3,3 +3,4 @@ notes.txt
 node_modules
 .specifyrc.json
 yarn-error.log
+github_auth.json
