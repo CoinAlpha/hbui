@@ -30,7 +30,7 @@
     "packassets": "yarn packsvgs && yarn packfonts",
     "packsvgs": "babel assets/svgs/**/**/** -d _dist/assets/svgs && rm _dist/assets/svgs/*.*",
     "packfonts": "copyfiles ./assets/fonts/**/**/*.* _dist",
-    "pull_dsm": "yarn pull_assets && pull_components && pull_constants && pull_elements && pull_system",
+    "pull_dsm": "yarn pull_assets && yarn pull_components && yarn pull_constants && yarn pull_elements && yarn pull_system",
     "pull_assets": "rm -rf assets && node ./node_modules/github-files-fetcher --file='./github_auth.json' --url='https://github.com/CoinAlpha/dsm/tree/master/hbui/assets' --out='./'",
     "pull_components": "rm -rf components && node ./node_modules/github-files-fetcher --file='./github_auth.json' --url='https://github.com/CoinAlpha/dsm/tree/master/hbui/components' --out='./'",
     "pull_constants": "rm -rf constants && node ./node_modules/github-files-fetcher --file='./github_auth.json' --url='https://github.com/CoinAlpha/dsm/tree/master/hbui/constants' --out='./'",
