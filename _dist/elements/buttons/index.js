@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ButtonWarning = exports.ButtonSuccess = exports.ButtonSecondary = exports.ButtonInfo = exports.ButtonDanger = exports.Button = void 0;
+exports.Button = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -15,15 +15,12 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure undefined"); }
-
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var ButtonBase = _styledComponents["default"].button(function (_ref) {
+var Button = _styledComponents["default"].button(function (_ref) {
   var isSecondary = _ref.isSecondary,
       isInfo = _ref.isInfo,
       isSuccess = _ref.isSuccess,
-      variant = _ref.variant,
       isWarning = _ref.isWarning,
       isDanger = _ref.isDanger,
       isSmall = _ref.isSmall,
@@ -47,12 +44,14 @@ var ButtonBase = _styledComponents["default"].button(function (_ref) {
     "paddingRight": "0.75rem",
     "paddingTop": "5px",
     "paddingBottom": "5px",
+    "borderWidth": "1px",
     "borderRadius": "0.125rem",
     ":focus": {
       "outline": "2px solid transparent",
       "outlineOffset": "2px"
     }
-  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      font-family: 'Inter';\n      align-items: center;\n      justify-content: center;\n      user-select: none;\n      cursor: pointer;\n      .icon-before * {\n        margin-right: 10px;\n        fill: ", ";\n      }\n      .icon-after * {\n        margin-left: 10px;\n        fill: ", ";\n      }\n    "])), iconColor ? iconColor : 'auto', iconColor ? iconColor : 'auto'), isUppercase && [(0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        text-transform: uppercase;\n      "])))], isSmall && [{
+  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      font-family: 'Inter';\n      align-items: center;\n      justify-content: center;\n      user-select: none;\n      cursor: pointer;\n      .icon-before {\n        margin-right: 10px;\n        position: relative;\n      }\n      .icon-after {\n        margin-left: 10px;\n        position: relative;\n      }\n      .icon-before * {\n        fill: ", ";\n      }\n      .icon-after * {\n        fill: ", ";\n      }\n    "])), iconColor ? iconColor : 'auto', iconColor ? iconColor : 'auto'), isUppercase && [(0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        text-transform: uppercase;\n      "])))], // variantStyle(variant, isInfo, isSuccess, isWarning, isDanger),
+  defaultStyle, isSecondary && secondaryStyle, isSuccess && successStyle, isInfo && infoStyle, isWarning && warningStyle, isDanger && dangerStyle, isSmall && [{
     "paddingLeft": "0.5rem",
     "paddingRight": "0.5rem",
     "paddingTop": "2px",
@@ -76,169 +75,140 @@ var ButtonBase = _styledComponents["default"].button(function (_ref) {
   }]];
 });
 
-var Button = (0, _styledComponents["default"])(ButtonBase)(function (_ref2) {
-  _objectDestructuringEmpty(_ref2);
-
-  return [{
-    "color": "var(--text-button)",
-    ":hover": {
-      "color": "var(--text-button-hover)"
-    }
-  }, {
-    "backgroundColor": "var(--bg-button)",
-    ":hover": {
-      "backgroundColor": "var(--bg-button-hover)"
-    },
-    ":active": {
-      "backgroundColor": "var(--bg-button-active)"
-    }
-  }, {
-    "borderColor": "var(--border-button)",
-    ":hover": {
-      "borderColor": "var(--border-button-hover)"
-    },
-    ":active": {
-      "borderColor": "var(--border-button-active)"
-    }
-  }];
-});
 exports.Button = Button;
-var ButtonSecondary = (0, _styledComponents["default"])(ButtonBase)(function (_ref3) {
-  _objectDestructuringEmpty(_ref3);
-
-  return [{
-    "color": "var(--text-button-secondary)",
-    ":hover": {
-      "color": "var(--text-button-secondary-hover)"
-    }
-  }, {
-    "backgroundColor": "var(--bg-button-secondary)",
-    ":hover": {
-      "backgroundColor": "var(--bg-button-secondary-hover)"
-    },
-    ":active": {
-      "backgroundColor": "var(--bg-button-secondary-active)"
-    }
-  }, {
-    "borderColor": "var(--border-button-secondary)",
-    ":hover": {
-      "borderColor": "var(--border-button-secondary-hover)"
-    },
-    ":active": {
-      "borderColor": "var(--border-button-secondary-active)"
-    }
-  }];
-});
-exports.ButtonSecondary = ButtonSecondary;
-var ButtonSuccess = (0, _styledComponents["default"])(ButtonBase)(function (_ref4) {
-  _objectDestructuringEmpty(_ref4);
-
-  return [{
-    "color": "var(--text-button-success)",
-    ":hover": {
-      "color": "var(--text-button-success-hover)"
-    }
-  }, {
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity))",
-    ":hover": {
-      "backgroundColor": "var(--bg-success-hover)"
-    },
-    ":active": {
-      "backgroundColor": "var(--bg-success-active)"
-    }
-  }, {
-    "borderColor": "var(--border-button-success)",
-    ":hover": {
-      "borderColor": "var(--border-button-success-hover)"
-    },
-    ":active": {
-      "borderColor": "var(--border-button-success-active)"
-    }
-  }];
-});
-exports.ButtonSuccess = ButtonSuccess;
-var ButtonInfo = (0, _styledComponents["default"])(ButtonBase)(function (_ref5) {
-  _objectDestructuringEmpty(_ref5);
-
-  return [{
-    "color": "var(--text-button-info)",
-    ":hover": {
-      "color": "var(--text-button-info-hover)"
-    }
-  }, {
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(49, 141, 255, var(--tw-bg-opacity))",
-    ":hover": {
-      "backgroundColor": "var(--bg-info-hover)"
-    },
-    ":active": {
-      "backgroundColor": "var(--bg-info-active)"
-    }
-  }, {
-    "borderColor": "var(--border-button-info)",
-    ":hover": {
-      "borderColor": "var(--border-button-info-hover)"
-    },
-    ":active": {
-      "borderColor": "var(--border-button-info-active)"
-    }
-  }];
-});
-exports.ButtonInfo = ButtonInfo;
-var ButtonWarning = (0, _styledComponents["default"])(ButtonBase)(function (_ref6) {
-  _objectDestructuringEmpty(_ref6);
-
-  return [{
-    "color": "var(--text-button-warning)",
-    ":hover": {
-      "color": "var(--text-button-warning-hover)"
-    }
-  }, {
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(240, 135, 39, var(--tw-bg-opacity))",
-    ":hover": {
-      "backgroundColor": "var(--bg-warning-hover)"
-    },
-    ":active": {
-      "backgroundColor": "var(--bg-warning-active)"
-    }
-  }, {
-    "borderColor": "var(--border-button-warning)",
-    ":hover": {
-      "borderColor": "var(--border-button-warning-hover)"
-    },
-    ":active": {
-      "borderColor": "var(--border-button-warning-active)"
-    }
-  }];
-});
-exports.ButtonWarning = ButtonWarning;
-var ButtonDanger = (0, _styledComponents["default"])(ButtonBase)(function (_ref7) {
-  _objectDestructuringEmpty(_ref7);
-
-  return [{
-    "color": "var(--text-button-danger)",
-    ":hover": {
-      "color": "var(--text-button-danger-hover)"
-    }
-  }, {
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(235, 87, 87, var(--tw-bg-opacity))",
-    ":hover": {
-      "backgroundColor": "var(--bg-danger-hover)"
-    },
-    ":active": {
-      "backgroundColor": "var(--bg-danger-active)"
-    }
-  }, {
-    "borderColor": "var(--border-button-danger)",
-    ":hover": {
-      "borderColor": "var(--border-button-danger-hover)"
-    },
-    ":active": {
-      "borderColor": "var(--border-button-danger-active)"
-    }
-  }];
-});
-exports.ButtonDanger = ButtonDanger;
+var defaultStyle = [{
+  "color": "var(--text-button)",
+  ":hover": {
+    "color": "var(--text-button-hover)"
+  }
+}, {
+  "backgroundColor": "var(--bg-button)",
+  ":hover": {
+    "backgroundColor": "var(--bg-button-hover)"
+  },
+  ":active": {
+    "backgroundColor": "var(--bg-button-active)"
+  }
+}, {
+  "borderColor": "var(--border-button)",
+  ":hover": {
+    "borderColor": "var(--border-button-hover)"
+  },
+  ":active": {
+    "borderColor": "var(--border-button-active)"
+  }
+}];
+var secondaryStyle = [{
+  "color": "var(--text-button-secondary)",
+  ":hover": {
+    "color": "var(--text-button-secondary-hover)"
+  }
+}, {
+  "backgroundColor": "var(--bg-button-secondary)",
+  ":hover": {
+    "backgroundColor": "var(--bg-button-secondary-hover)"
+  },
+  ":active": {
+    "backgroundColor": "var(--bg-button-secondary-active)"
+  }
+}, {
+  "borderColor": "var(--border-button-secondary)",
+  ":hover": {
+    "borderColor": "var(--border-button-secondary-hover)"
+  },
+  ":active": {
+    "borderColor": "var(--border-button-secondary-active)"
+  }
+}];
+var successStyle = [{
+  "color": "var(--text-button-success)",
+  ":hover": {
+    "color": "var(--text-button-success-hover)"
+  }
+}, {
+  "--tw-bg-opacity": "1",
+  "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity))",
+  ":hover": {
+    "backgroundColor": "var(--bg-success-hover)"
+  },
+  ":active": {
+    "backgroundColor": "var(--bg-success-active)"
+  }
+}, {
+  "borderColor": "var(--border-button-success)",
+  ":hover": {
+    "borderColor": "var(--border-button-success-hover)"
+  },
+  ":active": {
+    "borderColor": "var(--border-button-success-active)"
+  }
+}];
+var infoStyle = [{
+  "color": "var(--text-button-info)",
+  ":hover": {
+    "color": "var(--text-button-info-hover)"
+  }
+}, {
+  "--tw-bg-opacity": "1",
+  "backgroundColor": "rgba(49, 141, 255, var(--tw-bg-opacity))",
+  ":hover": {
+    "backgroundColor": "var(--bg-info-hover)"
+  },
+  ":active": {
+    "backgroundColor": "var(--bg-info-active)"
+  }
+}, {
+  "borderColor": "var(--border-button-info)",
+  ":hover": {
+    "borderColor": "var(--border-button-info-hover)"
+  },
+  ":active": {
+    "borderColor": "var(--border-button-info-active)"
+  }
+}];
+var warningStyle = [{
+  "color": "var(--text-button-warning)",
+  ":hover": {
+    "color": "var(--text-button-warning-hover)"
+  }
+}, {
+  "--tw-bg-opacity": "1",
+  "backgroundColor": "rgba(240, 135, 39, var(--tw-bg-opacity))",
+  ":hover": {
+    "backgroundColor": "var(--bg-warning-hover)"
+  },
+  ":active": {
+    "backgroundColor": "var(--bg-warning-active)"
+  }
+}, {
+  "borderColor": "var(--border-button-warning)",
+  ":hover": {
+    "borderColor": "var(--border-button-warning-hover)"
+  },
+  ":active": {
+    "borderColor": "var(--border-button-warning-active)"
+  }
+}];
+var dangerStyle = [{
+  "color": "var(--text-button-danger)",
+  ":hover": {
+    "color": "var(--text-button-danger-hover)"
+  }
+}, {
+  "--tw-bg-opacity": "1",
+  "backgroundColor": "rgba(235, 87, 87, var(--tw-bg-opacity))",
+  ":hover": {
+    "backgroundColor": "var(--bg-danger-hover)"
+  },
+  ":active": {
+    "backgroundColor": "var(--bg-danger-active)"
+  }
+}, {
+  "borderColor": "var(--border-button-danger)",
+  ":hover": {
+    "borderColor": "var(--border-button-danger-hover)"
+  },
+  ":active": {
+    "borderColor": "var(--border-button-danger-active)"
+  }
+}];
