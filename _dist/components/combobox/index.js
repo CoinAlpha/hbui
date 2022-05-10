@@ -58,8 +58,7 @@ function ComboBox(_ref) {
     onChange: setSelected
   }, props), (0, _react3.jsx)("div", {
     css: {
-      "position": "relative",
-      "marginTop": "0.25rem"
+      "position": "relative"
     }
   }, (0, _react3.jsx)("div", {
     css: {
