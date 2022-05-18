@@ -56,13 +56,13 @@ var NavBar = function NavBar(_ref) {
       to: link.url,
       label: link.label
     });
-  }))), (0, _react2.jsx)(RightSide, null, showThemeToggle && (0, _react2.jsx)(_ThemeToggle["default"], null), (0, _react2.jsx)(LinksRow, null, linksRight.map(function (link) {
+  }))), (0, _react2.jsx)(RightSide, null, showThemeToggle && (0, _react2.jsx)(_ThemeToggle["default"], null), linksRight && (0, _react2.jsx)(LinksRow, null, linksRight.map(function (link) {
     return (0, _react2.jsx)(_chip["default"], {
       key: link.url,
       to: link.url,
       label: link.label
     });
-  })), (0, _react2.jsx)(Menu, null, userData.profileImage ? (0, _react2.jsx)("img", {
+  })), userData && (0, _react2.jsx)(Menu, null, userData.profileImage ? (0, _react2.jsx)("img", {
     src: userData.profileImage,
     alt: userData.name
   }) : (0, _react2.jsx)(ProfileIcon, null), (0, _react2.jsx)(_typography.P, null, userData.name), (0, _react2.jsx)(_TriangleDown["default"], null))));
