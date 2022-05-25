@@ -62,10 +62,10 @@ var getStateIcon = function getStateIcon(type) {
 var Root = _styledComponents["default"].div(function (_ref2) {
   var type = _ref2.type;
   return [{
-    "--tw-shadow": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "--tw-shadow": "0px 8px 10px -6px #000000, 0px 20px 25px -5px #000000",
     "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
     ".dark &": {
-      "--tw-shadow": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      "--tw-shadow": "0px 8px 10px -6px #000000, 0px 20px 25px -5px #000000",
       "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
       "--tw-bg-opacity": "1",
       "backgroundColor": "rgba(40, 44, 47, var(--tw-bg-opacity))"

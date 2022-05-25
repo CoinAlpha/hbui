@@ -41,9 +41,9 @@ module.exports = {
       serif: ['Courier New', 'serif'],
       mono: ['SF Mono', 'mono']
     },
-    dropShadow: {
+    boxShadow: {
       'sm': tokens.boxShadow['shadow-sm'],
-      'base': tokens.boxShadow.shadow,
+      'DEFAULT': tokens.boxShadow.shadow,
       'md': tokens.boxShadow['shadow-sm'],
       'lg': tokens.boxShadow['shadow-lg'],
       'xl': tokens.boxShadow['shadow-xl'],
@@ -110,7 +110,13 @@ module.exports = {
         "navbutton-active": "var(--bg-navbutton-active)",
         input: "var(--bg-input)",
         "input-focus": "var(--bg-input-focus)",
-        "input-hover": "var(--bg-input-hover)"
+        "input-hover": "var(--bg-input-hover)",
+        "checkbox-selected-enabled": "var(--bg-checkbox-selected-enabled)",
+        "checkbox-selected-hover": "var(--bg-checkbox-selected-hover)",
+        "checkbox-selected-active": "var(--bg-checkbox-selected-active)",
+        "checkbox-unselected-enabled": "var(--bg-checkbox-unselected-enabled)",
+        "checkbox-unselected-hover": "var(--bg-checkbox-unselected-hover)",
+        "checkbox-unselected-active": "var(--bg-checkbox-unselected-active)"
       },
       textColor: (_textColor = {
         primary: "var(--text-primary)",
@@ -138,7 +144,7 @@ module.exports = {
         navbutton: "var(--text-navbutton)",
         "navbutton-hover": "var(--text-navbutton-hover)",
         "navbutton-active": "var(--text-navbutton-active)"
-      }, _defineProperty(_textColor, "input", "var(--text-input)"), _defineProperty(_textColor, "input-focus", "var(--text-input-focus)"), _defineProperty(_textColor, "input-hover", "var(--text-input-hover)"), _textColor),
+      }, _defineProperty(_textColor, "input", "var(--text-input)"), _defineProperty(_textColor, "input-focus", "var(--text-input-focus)"), _defineProperty(_textColor, "input-hover", "var(--text-input-hover)"), _defineProperty(_textColor, "checkbox-selected-enabled", "var(--text-checkbox-selected-enabled)"), _defineProperty(_textColor, "checkbox-selected-hover", "var(--text-checkbox-selected-hover)"), _defineProperty(_textColor, "checkbox-selected-active", "var(--text-checkbox-selected-active)"), _defineProperty(_textColor, "checkbox-unselected-enabled", "var(--text-checkbox-unselected-enabled)"), _defineProperty(_textColor, "checkbox-unselected-hover", "var(--text-checkbox-unselected-hover)"), _defineProperty(_textColor, "checkbox-unselected-active", "var(--text-checkbox-unselected-active)"), _textColor),
       borderColor: {
         body: "var(--border-body)",
         window: "var(--border-window)",
@@ -162,7 +168,13 @@ module.exports = {
         "button-danger-active": "var(--border-button-danger-active)",
         input: "var(--border-input)",
         "input-focus": "var(--border-input-focus)",
-        "input-hover": "var(--border-input-hover)"
+        "input-hover": "var(--border-input-hover)",
+        "checkbox-selected-enabled": "var(--border-checkbox-selected-enabled)",
+        "checkbox-selected-hover": "var(--border-checkbox-selected-hover)",
+        "checkbox-selected-active": "var(--border-checkbox-selected-active)",
+        "checkbox-unselected-enabled": "var(--border-checkbox-unselected-enabled)",
+        "checkbox-unselected-hover": "var(--border-checkbox-unselected-hover)",
+        "checkbox-unselected-active": "var(--border-checkbox-unselected-active)"
       }
     }
   },

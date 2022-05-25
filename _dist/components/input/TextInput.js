@@ -146,7 +146,7 @@ var Root = _styledComponents["default"].div(function (_ref2) {
       customPrefixPadding = _ref2.customPrefixPadding;
   return [{
     "position": "relative"
-  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      .top-label {\n        top: 0px;\n        left: 8px;\n      }\n      .prefix-label {\n        top: 12px;\n      }\n    "]))), prefix && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        input {\n          padding-left: 60px;\n        }\n      "]))), customPrefixPadding && (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n        input {\n          padding-left: ", ";\n        }\n      "])), customPrefixPadding), hasValue && (0, _styledComponents.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n        .top-label {\n          opacity: 1;\n          top: -10px;\n        }\n      "]))), hasValue && inputFocused && (0, _styledComponents.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#318dff"), isValid && (0, _styledComponents.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#00c2ce"), isInvalid && (0, _styledComponents.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#eb5757"), isWarning && (0, _styledComponents.css)(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#f08727")];
+  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      .top-label {\n        top: 0px;\n        left: 8px;\n      }\n      .prefix-label {\n        top: 8px;\n      }\n    "]))), prefix && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        input {\n          padding-left: 60px;\n        }\n      "]))), customPrefixPadding && (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n        input {\n          padding-left: ", ";\n        }\n      "])), customPrefixPadding), hasValue && (0, _styledComponents.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n        .top-label {\n          opacity: 1;\n          top: -14px;\n        }\n      "]))), hasValue && inputFocused && (0, _styledComponents.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#318dff"), isValid && (0, _styledComponents.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#00c2ce"), isInvalid && (0, _styledComponents.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#eb5757"), isWarning && (0, _styledComponents.css)(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#f08727")];
 });
 
 var PrefixLabel = _styledComponents["default"].span(function (_ref3) {
@@ -154,7 +154,7 @@ var PrefixLabel = _styledComponents["default"].span(function (_ref3) {
 
   return [{
     "position": "absolute",
-    "left": "1rem",
+    "left": "0.75rem",
     "fontWeight": "500",
     "color": "var(--text-tertiary)",
     "fontSize": "0.9375rem",
@@ -172,7 +172,7 @@ var PlaceholderLabel = _styledComponents["default"].span(function (_ref4) {
     "transitionDuration": "200ms",
     "position": "absolute",
     "opacity": "0",
-    "backgroundColor": "var(--bg-window)",
+    "backgroundColor": "var(--bg-body)",
     "fontWeight": "500",
     "color": "var(--text-primary)",
     "fontSize": "0.75rem",
@@ -219,7 +219,7 @@ var BottomLabel = _styledComponents["default"].div(function (_ref5) {
     "display": "flex",
     "alignItems": "center",
     "width": "100%",
-    "backgroundColor": "var(--bg-input)",
+    "backgroundColor": "var(--bg-window)",
     "fontWeight": "500",
     "color": "var(--text-tertiary)",
     "fontSize": "0.8125rem",

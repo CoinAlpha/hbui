@@ -141,7 +141,7 @@ var Window = _styledComponents["default"].div(function (_ref) {
     "paddingBottom": "24px",
     "paddingLeft": "32px",
     "paddingRight": "32px",
-    "--tw-shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    "--tw-shadow": "0px 1px 2px -1px #000000, 0px 1px 3px #000000",
     "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
     "borderRadius": "4px"
   }, (0, _styledComponents.css)(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n    margin: 0 auto;\n    max-width: 696px;\n  "])))];

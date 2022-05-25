@@ -30,7 +30,7 @@ var extend = {
         300: "#54d6de",
         400: "#33ced8",
         500: "#00c2ce",
-        600: "#00b1bb",
+        600: "#008a92",
         800: "#006b71",
         900: "#005157"
       },
@@ -135,6 +135,25 @@ var extend = {
       }
     },
     dark: {
+      badges: {
+        "default": {
+          bg: {
+            active: "#484d51",
+            enabled: "#282c2f",
+            hover: "#3e4347"
+          },
+          border: {
+            active: "#484d51",
+            enabled: "#282c2f",
+            hover: "#3e4347"
+          },
+          text: {
+            active: "#dfe1e2",
+            enabled: "#dfe1e2",
+            hover: "#f1f3f3"
+          }
+        }
+      },
       "body-bg": "#151819",
       "body-border": "#3e4347",
       buttons: {
@@ -241,9 +260,47 @@ var extend = {
           }
         }
       },
+      checkboxes: {
+        selected: {
+          bg: {
+            active: "#00b1bb",
+            enabled: "#00c2ce",
+            hover: "#54d6de"
+          },
+          border: {
+            active: "#00b1bb",
+            enabled: "#00c2ce",
+            hover: "#54d6de"
+          },
+          svg: "#02292c",
+          text: {
+            active: "#dfe1e2",
+            enabled: "#dfe1e2",
+            hover: "#f1f3f3"
+          }
+        },
+        unselected: {
+          bg: {
+            active: "#155257",
+            enabled: "#3e4347",
+            hover: "#155257"
+          },
+          border: {
+            active: "#00c2ce",
+            enabled: "#60676c",
+            hover: "#54d6de"
+          },
+          svg: "#989fa4",
+          text: {
+            active: "#dfe1e2",
+            enabled: "#dfe1e2",
+            over: "#f1f3f3"
+          }
+        }
+      },
       input: {
         bg: {
-          enabled: "#2d3235",
+          enabled: "#323639",
           focus: "#1e2224",
           hover: "#31373b"
         },
@@ -257,12 +314,12 @@ var extend = {
         },
         text: {
           danger: "#eb5757",
-          enabled: "#9da1a4",
-          "field-label": "#87959f",
+          enabled: "#939b9f",
+          "field-label": "#939b9f",
           focus: "#ffffff",
           hover: "#dfe1e2",
           info: "#318dff",
-          prefix: "#788389",
+          prefix: "#868e93",
           success: "#00c2ce",
           warning: "#f08727"
         }
@@ -276,9 +333,25 @@ var extend = {
         },
         text: {
           active: "#fcfcfc",
-          enabled: "#dfe1e2",
+          enabled: "#aeb4b7",
           hover: "#fcfcfc",
           press: "#aeb4b7"
+        }
+      },
+      "notification-status": {
+        bg: {
+          danger: "#5b3233",
+          "default": "#323639",
+          info: "#244266",
+          success: "#155257",
+          warning: "#5d4025"
+        },
+        text: {
+          danger: "#f6b2b2",
+          "default": "#c9cdcf",
+          info: "#a0cbff",
+          success: "#8ae3e8",
+          warning: "#f8c89c"
         }
       },
       "radio-group": {
@@ -296,11 +369,17 @@ var extend = {
         }
       },
       "text-link": {
-        active: "#2d80e8",
-        enabled: "#318dff",
-        hover: "#75b3ff",
-        press: "#2d80e8",
-        visited: "#6200ee"
+        bg: {
+          active: "#244266",
+          hover: "#1d3653"
+        },
+        text: {
+          active: "#2d80e8",
+          enabled: "#318dff",
+          hover: "#75b3ff",
+          press: "#2d80e8",
+          visited: "#9654f4"
+        }
       },
       "text-primary": "#ffffff",
       "text-secondary": "#aeb4b7",
@@ -309,6 +388,25 @@ var extend = {
       "window-border": "#323639"
     },
     light: {
+      badges: {
+        "default": {
+          bg: {
+            active: "#c9cdcf",
+            enabled: "#f1f3f3",
+            hover: "#dfe1e2"
+          },
+          border: {
+            active: "#c9cdcf",
+            enabled: "#f1f3f3",
+            hover: "#dfe1e2"
+          },
+          text: {
+            active: "#323639",
+            enabled: "#323639",
+            hover: "#1e2224"
+          }
+        }
+      },
       "body-bg": "#fafafa",
       "body-border": "#e9ebec",
       buttons: {
@@ -324,8 +422,8 @@ var extend = {
             hover: "#d64f4f"
           },
           text: {
-            active: "#f9cbcb",
-            enabled: "#fdeeee",
+            active: "#fdeeee",
+            enabled: "#ffffff",
             hover: "#ffffff"
           }
         },
@@ -358,8 +456,8 @@ var extend = {
             hover: "#2d80e8"
           },
           text: {
-            active: "#bfdcff",
-            enabled: "#eaf4ff",
+            active: "#eaf4ff",
+            enabled: "#ffffff",
             hover: "#ffffff"
           }
         },
@@ -392,8 +490,8 @@ var extend = {
             hover: "#00b1bb"
           },
           text: {
-            active: "#b0ecf0",
-            enabled: "#e6f9fa",
+            active: "#e6f9fa",
+            enabled: "#ffffff",
             hover: "#ffffff"
           }
         },
@@ -409,9 +507,47 @@ var extend = {
             hover: "#da7b23"
           },
           text: {
-            active: "#fadabc",
-            enabled: "#fef3e9",
+            active: "#fef3e9",
+            enabled: "#ffffff",
             hover: "#ffffff"
+          }
+        }
+      },
+      checkboxes: {
+        selected: {
+          bg: {
+            active: "#008a92",
+            enabled: "#00c2ce",
+            hover: "#00b1bb"
+          },
+          border: {
+            active: "#008a92",
+            enabled: "#00c2ce",
+            hover: "#00b1bb"
+          },
+          svg: "#ffffff",
+          text: {
+            active: "#323639",
+            enabled: "#323639",
+            hover: "#1e2224"
+          }
+        },
+        unselected: {
+          bg: {
+            active: "#e6f9fa",
+            enabled: "#f1f3f3",
+            hover: "#e6f9fa"
+          },
+          border: {
+            active: "#00b1bb",
+            enabled: "#dfe1e2",
+            hover: "#00c2ce"
+          },
+          svg: "#aeb4b7",
+          text: {
+            active: "#323639",
+            enabled: "#323639",
+            hover: "#1e2224"
           }
         }
       },
@@ -450,9 +586,25 @@ var extend = {
         },
         text: {
           active: "#151819",
-          enabled: "#484d51",
+          enabled: "#788187",
           hover: "#323639",
           press: "#788187"
+        }
+      },
+      "notification-status": {
+        bg: {
+          danger: "#fdeeee",
+          "default": "#f1f3f3",
+          info: "#eaf4ff",
+          success: "#e6f9fa",
+          warning: "#fef3e9"
+        },
+        text: {
+          danger: "#eb5757",
+          "default": "#484d51",
+          info: "#318dff",
+          success: "#00c2ce",
+          warning: "#f08727"
         }
       },
       "radio-group": {
@@ -470,15 +622,21 @@ var extend = {
         }
       },
       "text-link": {
-        active: "#2d80e8",
-        enabled: "#318dff",
-        hover: "#2364b5",
-        press: "#2d80e8",
-        visited: "#6200ee"
+        bg: {
+          active: "#e0efff",
+          hover: "#ebf4ff"
+        },
+        text: {
+          active: "#2d80e8",
+          enabled: "#318dff",
+          hover: "#2364b5",
+          press: "#2d80e8",
+          visited: "#6200ee"
+        }
       },
       "text-primary": "#151819",
-      "text-secondary": "#323639",
-      "text-tertiary": "#788187",
+      "text-secondary": "#788187",
+      "text-tertiary": "#989fa4",
       "window-bg": "#ffffff",
       "window-border": "#e9ebec"
     },
@@ -498,7 +656,7 @@ var extend = {
     solid: "#f1f3f3"
   },
   spacing: {
-    xxs: "8px",
+    xxs: "4px",
     xs: "16px",
     sm: "24px",
     md: "32px",
