@@ -126,8 +126,7 @@ var successStyle = [{
     "color": "var(--text-button-success-hover)"
   }
 }, {
-  "--tw-bg-opacity": "1",
-  "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity))",
+  "backgroundColor": "rgba(0, 194, 206, 1)",
   ":hover": {
     "backgroundColor": "var(--bg-success-hover)"
   },
@@ -149,8 +148,7 @@ var infoStyle = [{
     "color": "var(--text-button-info-hover)"
   }
 }, {
-  "--tw-bg-opacity": "1",
-  "backgroundColor": "rgba(49, 141, 255, var(--tw-bg-opacity))",
+  "backgroundColor": "rgba(49, 141, 255, 1)",
   ":hover": {
     "backgroundColor": "var(--bg-info-hover)"
   },
@@ -172,8 +170,7 @@ var warningStyle = [{
     "color": "var(--text-button-warning-hover)"
   }
 }, {
-  "--tw-bg-opacity": "1",
-  "backgroundColor": "rgba(240, 135, 39, var(--tw-bg-opacity))",
+  "backgroundColor": "rgba(240, 135, 39, 1)",
   ":hover": {
     "backgroundColor": "var(--bg-warning-hover)"
   },
@@ -195,8 +192,7 @@ var dangerStyle = [{
     "color": "var(--text-button-danger-hover)"
   }
 }, {
-  "--tw-bg-opacity": "1",
-  "backgroundColor": "rgba(235, 87, 87, var(--tw-bg-opacity))",
+  "backgroundColor": "rgba(235, 87, 87, 1)",
   ":hover": {
     "backgroundColor": "var(--bg-danger-hover)"
   },

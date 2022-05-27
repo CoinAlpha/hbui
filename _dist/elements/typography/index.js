@@ -50,26 +50,19 @@ var sharedTransforms = function sharedTransforms(props) {
   }, props.noSelect && {
     "userSelect": "none"
   }, props.isWhite && {
-    "--tw-text-opacity": "1",
-    "color": "rgba(255, 255, 255, var(--tw-text-opacity)) !important"
+    "color": "rgba(255, 255, 255, 1) !important"
   }, props.isBrandColor && {
-    "--tw-text-opacity": "1",
-    "color": "rgba(0, 194, 206, var(--tw-text-opacity)) !important"
+    "color": "rgba(0, 194, 206, 1) !important"
   }, props.isGreen && {
-    "--tw-text-opacity": "1",
-    "color": "rgba(0, 194, 206, var(--tw-text-opacity)) !important"
+    "color": "rgba(0, 194, 206, 1) !important"
   }, props.isRed && {
-    "--tw-text-opacity": "1",
-    "color": "rgba(235, 87, 87, var(--tw-text-opacity)) !important"
+    "color": "rgba(235, 87, 87, 1) !important"
   }, props.isBlue && {
-    "--tw-text-opacity": "1",
-    "color": "rgba(49, 141, 255, var(--tw-text-opacity)) !important"
+    "color": "rgba(49, 141, 255, 1) !important"
   }, props.isOrange && {
-    "--tw-text-opacity": "1",
-    "color": "rgba(240, 135, 39, var(--tw-text-opacity)) !important"
+    "color": "rgba(240, 135, 39, 1) !important"
   }, props.isYellow && {
-    "--tw-text-opacity": "1",
-    "color": "rgba(252, 219, 23, var(--tw-text-opacity)) !important"
+    "color": "rgba(252, 219, 23, 1) !important"
   }, props.leadingNone && (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      line-height: 100% !important;\n    "]))), props.isLabel && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      user-select: none;\n      font-family: Inter !important;\n      line-height: 100% !important;\n    "]))), (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    a {\n      text-decoration: underline;\n    }\n  "])))];
 };
 

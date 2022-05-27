@@ -81,11 +81,9 @@ var KebabMenuContent = _styledComponents["default"].div(function (_ref2) {
     "borderWidth": "1px",
     "borderColor": "var(--border-window)"
   }, {
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(201, 205, 207, var(--tw-bg-opacity))",
+    "backgroundColor": "rgba(201, 205, 207, 1)",
     ".dark &": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(40, 44, 47, var(--tw-bg-opacity))"
+      "backgroundColor": "rgba(40, 44, 47, 1)"
     }
   }];
 });
@@ -113,19 +111,15 @@ var KebabMenuItem = (0, _styledComponents["default"])(_typography.LabelSmall)(fu
     },
     "cursor": "pointer"
   }, {
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(252, 252, 252, var(--tw-bg-opacity))",
+    "backgroundColor": "rgba(252, 252, 252, 1)",
     ".dark &": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(40, 44, 47, var(--tw-bg-opacity))"
+      "backgroundColor": "rgba(40, 44, 47, 1)"
     }
   }, {
     ":hover": {
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(241, 243, 243, var(--tw-bg-opacity))",
+      "backgroundColor": "rgba(241, 243, 243, 1)",
       ".dark &": {
-        "--tw-bg-opacity": "1",
-        "backgroundColor": "rgba(30, 34, 36, var(--tw-bg-opacity))"
+        "backgroundColor": "rgba(30, 34, 36, 1)"
       }
     }
   }];

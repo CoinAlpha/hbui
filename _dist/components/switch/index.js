@@ -25,8 +25,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var stylesA = {};
 stylesA[true] = {
-  "--tw-bg-opacity": "1",
-  "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity)) !important",
+  "backgroundColor": "rgba(0, 194, 206, 1) !important",
   "position": "relative",
   "display": "inline-flex",
   "height": "1.5rem",
@@ -35,11 +34,9 @@ stylesA[true] = {
   "borderRadius": "9999px"
 };
 stylesA[false] = {
-  "--tw-bg-opacity": "1",
-  "backgroundColor": "rgba(201, 205, 207, var(--tw-bg-opacity))",
+  "backgroundColor": "rgba(201, 205, 207, 1)",
   ".dark &": {
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(62, 67, 71, var(--tw-bg-opacity))"
+    "backgroundColor": "rgba(62, 67, 71, 1)"
   },
   "position": "relative",
   "display": "inline-flex",

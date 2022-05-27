@@ -62,19 +62,17 @@ var getStateIcon = function getStateIcon(type) {
 var Root = _styledComponents["default"].div(function (_ref2) {
   var type = _ref2.type;
   return [{
-    "--tw-shadow": "0px 8px 10px -6px #000000, 0px 20px 25px -5px #000000",
+    "--tw-shadow": "0px 8px 10px -6px #0000001a, 0px 20px 25px -5px #0000001a",
     "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
     ".dark &": {
-      "--tw-shadow": "0px 8px 10px -6px #000000, 0px 20px 25px -5px #000000",
+      "--tw-shadow": "0px 8px 10px -6px #0000001a, 0px 20px 25px -5px #0000001a",
       "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
-      "--tw-bg-opacity": "1",
-      "backgroundColor": "rgba(40, 44, 47, var(--tw-bg-opacity))"
+      "backgroundColor": "rgba(40, 44, 47, 1)"
     },
     "display": "inline-flex",
     "overflow": "hidden",
     "borderRadius": "4px",
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(255, 255, 255, var(--tw-bg-opacity))"
+    "backgroundColor": "rgba(255, 255, 255, 1)"
   }, {
     "marginBottom": "1rem"
   }];
@@ -84,25 +82,20 @@ var IconBox = _styledComponents["default"].div(function (_ref3) {
   var type = _ref3.type;
   return [{
     "display": "flex",
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(72, 77, 81, var(--tw-bg-opacity))",
+    "backgroundColor": "rgba(72, 77, 81, 1)",
     "alignItems": "center",
     "paddingLeft": "0.75rem",
     "paddingRight": "0.75rem",
     "paddingTop": "0.75rem",
     "paddingBottom": "0.75rem"
   }, type === 'success' && [{
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(0, 194, 206, var(--tw-bg-opacity))"
+    "backgroundColor": "rgba(0, 194, 206, 1)"
   }], type === 'info' && [{
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(49, 141, 255, var(--tw-bg-opacity))"
+    "backgroundColor": "rgba(49, 141, 255, 1)"
   }], type === 'danger' && [{
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(235, 87, 87, var(--tw-bg-opacity))"
+    "backgroundColor": "rgba(235, 87, 87, 1)"
   }], type === 'warning' && [{
-    "--tw-bg-opacity": "1",
-    "backgroundColor": "rgba(240, 135, 39, var(--tw-bg-opacity))"
+    "backgroundColor": "rgba(240, 135, 39, 1)"
   }]];
 });
 
@@ -112,11 +105,9 @@ var Text = _styledComponents["default"].div(function (_ref4) {
   return [{
     "display": "flex",
     "fontWeight": "500",
-    "--tw-text-opacity": "1",
-    "color": "rgba(72, 77, 81, var(--tw-text-opacity))",
+    "color": "rgba(72, 77, 81, 1)",
     ".dark &": {
-      "--tw-text-opacity": "1",
-      "color": "rgba(255, 255, 255, var(--tw-text-opacity))"
+      "color": "rgba(255, 255, 255, 1)"
     },
     "alignItems": "center",
     "paddingLeft": "1rem",

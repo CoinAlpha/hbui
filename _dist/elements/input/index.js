@@ -39,29 +39,22 @@ var TextInput = _styledComponents["default"].input(function (_ref) {
   }, {
     "borderWidth": "2px",
     ":focus": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(49, 141, 255, var(--tw-border-opacity))"
+      "borderColor": "rgba(49, 141, 255, 1)"
     }
   }, isValid && [{
-    "--tw-border-opacity": "1",
-    "borderColor": "rgba(0, 194, 206, var(--tw-border-opacity))",
+    "borderColor": "rgba(0, 194, 206, 1)",
     ":focus": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(0, 194, 206, var(--tw-border-opacity))"
+      "borderColor": "rgba(0, 194, 206, 1)"
     }
   }], isInvalid && [{
-    "--tw-border-opacity": "1",
-    "borderColor": "rgba(235, 87, 87, var(--tw-border-opacity))",
+    "borderColor": "rgba(235, 87, 87, 1)",
     ":focus": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(235, 87, 87, var(--tw-border-opacity))"
+      "borderColor": "rgba(235, 87, 87, 1)"
     }
   }], isWarning && [{
-    "--tw-border-opacity": "1",
-    "borderColor": "rgba(240, 135, 39, var(--tw-border-opacity))",
+    "borderColor": "rgba(240, 135, 39, 1)",
     ":focus": {
-      "--tw-border-opacity": "1",
-      "borderColor": "rgba(240, 135, 39, var(--tw-border-opacity))"
+      "borderColor": "rgba(240, 135, 39, 1)"
     }
   }]];
 });

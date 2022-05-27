@@ -94,8 +94,7 @@ var BreadcrumbsBarRoot = _styledComponents["default"].div(function (_ref2) {
     "borderBottomWidth": "1px",
     "borderColor": "var(--border-body)"
   }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    a.active {\n      ", "\n    }\n    .home-icon {\n      ", "\n    }\n    .divider {\n      ", "\n      display: inline;\n      line-height: 100%;\n    }\n    .inner-chevron-right, .divider {\n      ", "\n    }\n  "])), {
-    "--tw-text-opacity": "1",
-    "color": "rgba(0, 194, 206, var(--tw-text-opacity))"
+    "color": "rgba(0, 194, 206, 1)"
   }, {
     "position": "relative",
     "top": "-1px"
