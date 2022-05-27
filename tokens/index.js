@@ -1,5 +1,4 @@
 const extend = {
-  opacity: { 5: "0.05", 10: "0.1", 20: "0.2", 50: "0.5" },
   colors: {
     black: "#000000ff",
     "color-palettes": {
