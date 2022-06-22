@@ -54,7 +54,8 @@ var CheckboxRoot = _styledComponents["default"].div(function (_ref2) {
     "borderWidth": "1px",
     "borderColor": "var(--border-body)",
     ":hover": {
-      "borderColor": "rgba(0, 194, 206, 1)"
+      "--tw-border-opacity": "1",
+      "borderColor": "rgba(0, 194, 206, var(--tw-border-opacity))"
     }
   }, {
     "backgroundColor": "var(--bg-checkbox-unselected-enabled)",
@@ -99,9 +100,11 @@ function CheckIcon(_ref3) {
   }, (0, _react.jsx)("path", {
     css: {
       "fill": "currentColor",
-      "color": "rgba(255, 255, 255, 1)",
+      "--tw-text-opacity": "1",
+      "color": "rgba(255, 255, 255, var(--tw-text-opacity))",
       ".dark &": {
-        "color": "rgba(0, 0, 0, 1)"
+        "--tw-text-opacity": "1",
+        "color": "rgba(0, 0, 0, var(--tw-text-opacity))"
       }
     },
     d: "M7.25 1.266c.25-.25.25-.641 0-.891a.632.632 0 00-.875 0L2.812 3.938 1.25 2.375a.632.632 0 00-.875 0c-.25.25-.25.64 0 .89l2 2c.11.126.281.188.438.188a.617.617 0 00.437-.187l4-4z"
@@ -118,9 +121,11 @@ function MinusIcon() {
   }, (0, _react.jsx)("path", {
     css: {
       "fill": "currentColor",
-      "color": "rgba(255, 255, 255, 1)",
+      "--tw-text-opacity": "1",
+      "color": "rgba(255, 255, 255, var(--tw-text-opacity))",
       ".dark &": {
-        "color": "rgba(0, 0, 0, 1)"
+        "--tw-text-opacity": "1",
+        "color": "rgba(0, 0, 0, var(--tw-text-opacity))"
       }
     },
     d: "M10 1a.627.627 0 00-.625-.625H.625a.64.64 0 00-.625.64.6.6 0 00.61.61h8.75A.64.64 0 0010 1z"

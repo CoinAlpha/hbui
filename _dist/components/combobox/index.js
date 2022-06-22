@@ -126,7 +126,7 @@ function ComboBox(_ref) {
       "fontSize": "0.9375rem",
       "backgroundColor": "var(--bg-body)",
       "borderRadius": "0.375rem",
-      "--tw-shadow": "0px 4px 6px -4px #0000001a, 0px 10px 15px -3px #0000001a",
+      "--tw-shadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
       "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
       "maxHeight": "15rem",
       ":focus": {
@@ -242,6 +242,7 @@ spanBStyles[true] = {
   "display": "flex",
   "alignItems": "center",
   "paddingLeft": "0.75rem",
+  "--tw-text-opacity": "1",
   "color": "currentColor"
 };
 spanBStyles[false] = {
@@ -252,5 +253,6 @@ spanBStyles[false] = {
   "display": "flex",
   "alignItems": "center",
   "paddingLeft": "0.75rem",
+  "--tw-text-opacity": "1",
   "color": "currentColor"
 };

@@ -87,7 +87,8 @@ var TextInput = function TextInput(_ref) {
     className: "top-label"
   }, props), labelValue, required && (0, _react2.jsx)("span", {
     css: {
-      "color": "rgba(235, 87, 87, 1)",
+      "--tw-text-opacity": "1",
+      "color": "rgba(235, 87, 87, var(--tw-text-opacity))",
       "marginLeft": "0.25rem"
     }
   }, "*")), prefix && (0, _react2.jsx)(PrefixLabel, {
@@ -145,7 +146,7 @@ var Root = _styledComponents["default"].div(function (_ref2) {
       customPrefixPadding = _ref2.customPrefixPadding;
   return [{
     "position": "relative"
-  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      .top-label {\n        top: 0px;\n        left: 8px;\n      }\n      .prefix-label {\n        top: 8px;\n      }\n    "]))), prefix && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        input {\n          padding-left: 60px;\n        }\n      "]))), customPrefixPadding && (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n        input {\n          padding-left: ", ";\n        }\n      "])), customPrefixPadding), hasValue && (0, _styledComponents.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n        .top-label {\n          opacity: 1;\n          top: -14px;\n        }\n      "]))), hasValue && inputFocused && (0, _styledComponents.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#318dffff"), isValid && (0, _styledComponents.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#00c2ceff"), isInvalid && (0, _styledComponents.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#eb5757ff"), isWarning && (0, _styledComponents.css)(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#f08727ff")];
+  }, (0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      .top-label {\n        top: 0px;\n        left: 8px;\n      }\n      .prefix-label {\n        top: 8px;\n      }\n    "]))), prefix && (0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n        input {\n          padding-left: 60px;\n        }\n      "]))), customPrefixPadding && (0, _styledComponents.css)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n        input {\n          padding-left: ", ";\n        }\n      "])), customPrefixPadding), hasValue && (0, _styledComponents.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n        .top-label {\n          opacity: 1;\n          top: -14px;\n        }\n      "]))), hasValue && inputFocused && (0, _styledComponents.css)(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#318dff"), isValid && (0, _styledComponents.css)(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#00c2ce"), isInvalid && (0, _styledComponents.css)(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#eb5757"), isWarning && (0, _styledComponents.css)(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n        .top-label {\n          color: ", ";\n        }\n      "])), "#f08727")];
 });
 
 var PrefixLabel = _styledComponents["default"].span(function (_ref3) {
@@ -183,22 +184,29 @@ var PlaceholderLabel = _styledComponents["default"].span(function (_ref4) {
     ":focus": {
       "outline": "2px solid transparent",
       "outlineOffset": "2px",
-      "color": "rgba(49, 141, 255, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(49, 141, 255, var(--tw-text-opacity))"
     }
   }, isValid && [{
-    "color": "rgba(0, 194, 206, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(0, 194, 206, var(--tw-text-opacity))",
     ":focus": {
-      "color": "rgba(0, 194, 206, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(0, 194, 206, var(--tw-text-opacity))"
     }
   }], isInvalid && [{
-    "color": "rgba(235, 87, 87, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(235, 87, 87, var(--tw-text-opacity))",
     ":focus": {
-      "color": "rgba(235, 87, 87, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(235, 87, 87, var(--tw-text-opacity))"
     }
   }], isWarning && [{
-    "color": "rgba(240, 135, 39, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(240, 135, 39, var(--tw-text-opacity))",
     ":focus": {
-      "color": "rgba(240, 135, 39, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(240, 135, 39, var(--tw-text-opacity))"
     }
   }]];
 });
@@ -223,28 +231,35 @@ var BottomLabel = _styledComponents["default"].div(function (_ref5) {
     ":focus": {
       "outline": "2px solid transparent",
       "outlineOffset": "2px",
-      "color": "rgba(49, 141, 255, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(49, 141, 255, var(--tw-text-opacity))"
     }
   }, isValid && [{
-    "backgroundColor": "rgba(0, 194, 206, 1)",
+    "backgroundColor": "rgba(0, 194, 206, 0.1)",
     "borderRadius": "4px",
-    "color": "rgba(0, 194, 206, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(0, 194, 206, var(--tw-text-opacity))",
     ":focus": {
-      "color": "rgba(0, 194, 206, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(0, 194, 206, var(--tw-text-opacity))"
     }
   }], isInvalid && [{
-    "backgroundColor": "rgba(235, 87, 87, 1)",
+    "backgroundColor": "rgba(235, 87, 87, 0.1)",
     "borderRadius": "4px",
-    "color": "rgba(235, 87, 87, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(235, 87, 87, var(--tw-text-opacity))",
     ":focus": {
-      "color": "rgba(235, 87, 87, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(235, 87, 87, var(--tw-text-opacity))"
     }
   }], isWarning && [{
-    "backgroundColor": "rgba(240, 135, 39, 1)",
+    "backgroundColor": "rgba(240, 135, 39, 0.1)",
     "borderRadius": "4px",
-    "color": "rgba(240, 135, 39, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(240, 135, 39, var(--tw-text-opacity))",
     ":focus": {
-      "color": "rgba(240, 135, 39, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(240, 135, 39, var(--tw-text-opacity))"
     }
   }], (0, _styledComponents.css)(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n    svg {\n      margin-right: 6px;\n    }\n  "])))];
 });

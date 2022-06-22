@@ -63,9 +63,11 @@ function Spinner(_ref) {
   }, (0, _react2.jsx)("circle", {
     css: {
       "stroke": "currentColor",
-      "color": "rgba(223, 225, 226, 1)",
+      "--tw-text-opacity": "1",
+      "color": "rgba(223, 225, 226, var(--tw-text-opacity))",
       ".dark &": {
-        "color": "rgba(62, 67, 71, 1)"
+        "--tw-text-opacity": "1",
+        "color": "rgba(62, 67, 71, var(--tw-text-opacity))"
       }
     },
     cx: "18",
@@ -90,9 +92,11 @@ function DefaultPath() {
   return (0, _react2.jsx)("path", {
     css: {
       "stroke": "currentColor",
-      "color": "rgba(0, 0, 0, 1)",
+      "--tw-text-opacity": "1",
+      "color": "rgba(0, 0, 0, var(--tw-text-opacity))",
       ".dark &": {
-        "color": "rgba(255, 255, 255, 1)"
+        "--tw-text-opacity": "1",
+        "color": "rgba(255, 255, 255, var(--tw-text-opacity))"
       }
     },
     d: "M36 18c0-9.94-8.06-18-18-18",
@@ -105,7 +109,8 @@ function BluePath() {
   return (0, _react2.jsx)("path", {
     css: {
       "stroke": "currentColor",
-      "color": "rgba(49, 141, 255, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(49, 141, 255, var(--tw-text-opacity))"
     },
     d: "M36 18c0-9.94-8.06-18-18-18",
     strokeLinecap: "round",
@@ -117,7 +122,8 @@ function GreenPath() {
   return (0, _react2.jsx)("path", {
     css: {
       "stroke": "currentColor",
-      "color": "rgba(0, 194, 206, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(0, 194, 206, var(--tw-text-opacity))"
     },
     d: "M36 18c0-9.94-8.06-18-18-18",
     strokeLinecap: "round",
@@ -129,7 +135,8 @@ function RedPath() {
   return (0, _react2.jsx)("path", {
     css: {
       "stroke": "currentColor",
-      "color": "rgba(235, 87, 87, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(235, 87, 87, var(--tw-text-opacity))"
     },
     d: "M36 18c0-9.94-8.06-18-18-18",
     strokeLinecap: "round",
@@ -141,7 +148,8 @@ function OrangePath() {
   return (0, _react2.jsx)("path", {
     css: {
       "stroke": "currentColor",
-      "color": "rgba(240, 135, 39, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(240, 135, 39, var(--tw-text-opacity))"
     },
     d: "M36 18c0-9.94-8.06-18-18-18",
     strokeLinecap: "round",

@@ -26,7 +26,7 @@ function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var Section = _styledComponents["default"].div(function () {
-  return [(0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    // outline: 1px solid red;\n    display: flex;\n    flex-direction: column;\n  "]))), {
+  return [(0, _styledComponents.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n  "]))), {
     "width": "100%"
   }];
 });
@@ -34,7 +34,7 @@ var Section = _styledComponents["default"].div(function () {
 exports.Section = Section;
 
 var Container = _styledComponents["default"].div(function () {
-  return [(0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    // outline: 1px solid blue;\n    align-self: center;\n  "]))), {
+  return [(0, _styledComponents.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    align-self: center;\n  "]))), {
     "width": "calc(100% - 40px)",
     "@media (min-width: 768px)": {
       "width": "91.666667%"
@@ -43,7 +43,7 @@ var Container = _styledComponents["default"].div(function () {
       "width": "83.333333%"
     },
     "@media (min-width: 1536px)": {
-      "width": "75%"
+      "width": "1440px"
     }
   }];
 });
@@ -141,7 +141,7 @@ var Window = _styledComponents["default"].div(function (_ref) {
     "paddingBottom": "24px",
     "paddingLeft": "32px",
     "paddingRight": "32px",
-    "--tw-shadow": "0px 1px 2px -1px #0000001a, 0px 1px 3px #0000001a",
+    "--tw-shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "boxShadow": "var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)",
     "borderRadius": "4px"
   }, (0, _styledComponents.css)(_templateObject10 || (_templateObject10 = _taggedTemplateLiteral(["\n    margin: 0 auto;\n    max-width: 696px;\n  "])))];

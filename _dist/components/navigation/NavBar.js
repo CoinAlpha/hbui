@@ -15,6 +15,8 @@ var _typography = require("../../elements/typography");
 
 var _HummingbotLogo = _interopRequireDefault(require("../../assets/svgs/logos/HummingbotLogo"));
 
+var _CoinAlphaLogo = _interopRequireDefault(require("../../assets/svgs/logos/CoinAlphaLogo"));
+
 var _TriangleDown = _interopRequireDefault(require("../../assets/svgs/arrows/TriangleDown"));
 
 var _chip = _interopRequireDefault(require("../chip"));
@@ -25,7 +27,7 @@ var _react2 = require("@emotion/react");
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 
-var _excluded = ["siteNameA", "siteNameB", "linksLeft", "linksRight", "userData", "showThemeToggle"];
+var _excluded = ["siteNameA", "siteNameB", "linksLeft", "linksRight", "userData", "showThemeToggle", "logo"];
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -48,9 +50,13 @@ var NavBar = function NavBar(_ref) {
       linksRight = _ref.linksRight,
       userData = _ref.userData,
       showThemeToggle = _ref.showThemeToggle,
+      _ref$logo = _ref.logo,
+      logo = _ref$logo === void 0 ? 'hummingbot' : _ref$logo,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  return (0, _react2.jsx)(NavBarRoot, null, (0, _react2.jsx)(LeftSide, null, (0, _react2.jsx)(LogoContainer, null, (0, _react2.jsx)(_HummingbotLogo["default"], null), (0, _react2.jsx)(_typography.Body, null, (0, _react2.jsx)(_typography.Bold, null, siteNameA), " ", siteNameB)), (0, _react2.jsx)(LinksRow, null, linksLeft.map(function (link) {
+  return (0, _react2.jsx)(NavBarRoot, null, (0, _react2.jsx)(LeftSide, null, (0, _react2.jsx)(LogoContainer, {
+    to: "/"
+  }, logo === 'hummingbot' && (0, _react2.jsx)(_HummingbotLogo["default"], null), logo === 'coinalpha' && (0, _react2.jsx)(_CoinAlphaLogo["default"], null), (0, _react2.jsx)(_typography.Body, null, (0, _react2.jsx)(_typography.Bold, null, siteNameA), " ", siteNameB)), (0, _react2.jsx)(LinksRow, null, linksLeft && linksLeft.map(function (link) {
     return (0, _react2.jsx)(_chip["default"], {
       key: link.url,
       to: link.url,

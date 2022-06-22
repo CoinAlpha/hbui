@@ -31,7 +31,7 @@ function Modal(_ref) {
       "left": "0px",
       "width": "100%",
       "height": "100%",
-      "backgroundColor": "rgba(0, 0, 0, 1)",
+      "backgroundColor": "rgba(0, 0, 0, 0.8)",
       "display": "flex",
       "alignItems": "center",
       "justifyContent": "center"

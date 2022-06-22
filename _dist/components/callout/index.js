@@ -168,11 +168,13 @@ var RootDefault = (0, _styledComponents["default"])(Root)(function (_ref10) {
   _objectDestructuringEmpty(_ref10);
 
   return [{
-    "borderColor": "rgba(223, 225, 226, 1)",
-    "backgroundColor": "rgba(241, 243, 243, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(223, 225, 226, var(--tw-border-opacity))",
+    "--tw-bg-opacity": "1",
+    "backgroundColor": "rgba(241, 243, 243, var(--tw-bg-opacity))"
   }, {
     ".dark &": {
-      "backgroundColor": "rgba(250, 250, 250, 1)"
+      "backgroundColor": "rgba(250, 250, 250, 0.05)"
     }
   }];
 });
@@ -180,12 +182,14 @@ var RootSuccess = (0, _styledComponents["default"])(Root)(function (_ref11) {
   _objectDestructuringEmpty(_ref11);
 
   return [{
-    "borderColor": "rgba(176, 236, 240, 1)",
-    "backgroundColor": "rgba(176, 236, 240, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(176, 236, 240, var(--tw-border-opacity))",
+    "backgroundColor": "rgba(176, 236, 240, 0.2)"
   }, {
     ".dark &": {
-      "borderColor": "rgba(84, 214, 222, 1)",
-      "backgroundColor": "rgba(0, 194, 206, 1)"
+      "--tw-border-opacity": "1",
+      "borderColor": "rgba(84, 214, 222, var(--tw-border-opacity))",
+      "backgroundColor": "rgba(0, 194, 206, 0.1)"
     }
   }];
 });
@@ -193,12 +197,14 @@ var RootInfo = (0, _styledComponents["default"])(Root)(function (_ref12) {
   _objectDestructuringEmpty(_ref12);
 
   return [{
-    "borderColor": "rgba(191, 220, 255, 1)",
-    "backgroundColor": "rgba(191, 220, 255, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(191, 220, 255, var(--tw-border-opacity))",
+    "backgroundColor": "rgba(191, 220, 255, 0.2)"
   }, {
     ".dark &": {
-      "borderColor": "rgba(117, 179, 255, 1)",
-      "backgroundColor": "rgba(117, 179, 255, 1)"
+      "--tw-border-opacity": "1",
+      "borderColor": "rgba(117, 179, 255, var(--tw-border-opacity))",
+      "backgroundColor": "rgba(117, 179, 255, 0.1)"
     }
   }];
 });
@@ -206,12 +212,14 @@ var RootDanger = (0, _styledComponents["default"])(Root)(function (_ref13) {
   _objectDestructuringEmpty(_ref13);
 
   return [{
-    "borderColor": "rgba(249, 203, 203, 1)",
-    "backgroundColor": "rgba(249, 203, 203, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(249, 203, 203, var(--tw-border-opacity))",
+    "backgroundColor": "rgba(249, 203, 203, 0.2)"
   }, {
     ".dark &": {
-      "borderColor": "rgba(242, 142, 142, 1)",
-      "backgroundColor": "rgba(242, 142, 142, 1)"
+      "--tw-border-opacity": "1",
+      "borderColor": "rgba(242, 142, 142, var(--tw-border-opacity))",
+      "backgroundColor": "rgba(242, 142, 142, 0.1)"
     }
   }];
 });
@@ -219,12 +227,14 @@ var RootWarning = (0, _styledComponents["default"])(Root)(function (_ref14) {
   _objectDestructuringEmpty(_ref14);
 
   return [{
-    "borderColor": "rgba(250, 218, 188, 1)",
-    "backgroundColor": "rgba(250, 218, 188, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(250, 218, 188, var(--tw-border-opacity))",
+    "backgroundColor": "rgba(250, 218, 188, 0.2)"
   }, {
     ".dark &": {
-      "borderColor": "rgba(245, 175, 110, 1)",
-      "backgroundColor": "rgba(245, 175, 110, 1)"
+      "--tw-border-opacity": "1",
+      "borderColor": "rgba(245, 175, 110, var(--tw-border-opacity))",
+      "backgroundColor": "rgba(245, 175, 110, 0.1)"
     }
   }];
 });
@@ -232,12 +242,14 @@ var RootTip = (0, _styledComponents["default"])(Root)(function (_ref15) {
   _objectDestructuringEmpty(_ref15);
 
   return [{
-    "borderColor": "rgba(206, 176, 250, 1)",
-    "backgroundColor": "rgba(206, 176, 250, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(206, 176, 250, var(--tw-border-opacity))",
+    "backgroundColor": "rgba(206, 176, 250, 0.2)"
   }, {
     ".dark &": {
-      "borderColor": "rgba(150, 84, 244, 1)",
-      "backgroundColor": "rgba(150, 84, 244, 1)"
+      "--tw-border-opacity": "1",
+      "borderColor": "rgba(150, 84, 244, var(--tw-border-opacity))",
+      "backgroundColor": "rgba(150, 84, 244, 0.1)"
     }
   }];
 });
@@ -245,12 +257,14 @@ var RootBug = (0, _styledComponents["default"])(Root)(function (_ref16) {
   _objectDestructuringEmpty(_ref16);
 
   return [{
-    "borderColor": "rgba(250, 218, 188, 1)",
-    "backgroundColor": "rgba(250, 218, 188, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(250, 218, 188, var(--tw-border-opacity))",
+    "backgroundColor": "rgba(250, 218, 188, 0.2)"
   }, {
     ".dark &": {
-      "borderColor": "rgba(245, 175, 110, 1)",
-      "backgroundColor": "rgba(245, 175, 110, 1)"
+      "--tw-border-opacity": "1",
+      "borderColor": "rgba(245, 175, 110, var(--tw-border-opacity))",
+      "backgroundColor": "rgba(245, 175, 110, 0.1)"
     }
   }];
 });
@@ -258,11 +272,12 @@ var RootNote = (0, _styledComponents["default"])(Root)(function (_ref17) {
   _objectDestructuringEmpty(_ref17);
 
   return [{
-    "borderColor": "rgba(223, 225, 226, 1)",
-    "backgroundColor": "rgba(223, 225, 226, 1)"
+    "--tw-border-opacity": "1",
+    "borderColor": "rgba(223, 225, 226, var(--tw-border-opacity))",
+    "backgroundColor": "rgba(223, 225, 226, 0.2)"
   }, {
     ".dark &": {
-      "backgroundColor": "rgba(250, 250, 250, 1)"
+      "backgroundColor": "rgba(250, 250, 250, 0.05)"
     }
   }];
 });
@@ -283,72 +298,88 @@ var Header = _styledComponents["default"].div(function (_ref18) {
 var HeaderDefault = (0, _styledComponents["default"])(Header)(function (_ref19) {
   var type = _ref19.type;
   return [{
-    "color": "rgba(21, 24, 25, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(21, 24, 25, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(201, 205, 207, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(201, 205, 207, var(--tw-text-opacity))"
     }
   }];
 });
 var HeaderSuccess = (0, _styledComponents["default"])(Header)(function (_ref20) {
   var type = _ref20.type;
   return [{
-    "color": "rgba(0, 194, 206, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(0, 194, 206, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(51, 206, 216, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(51, 206, 216, var(--tw-text-opacity))"
     }
   }];
 });
 var HeaderInfo = (0, _styledComponents["default"])(Header)(function (_ref21) {
   var type = _ref21.type;
   return [{
-    "color": "rgba(49, 141, 255, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(49, 141, 255, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(117, 179, 255, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(117, 179, 255, var(--tw-text-opacity))"
     }
   }];
 });
 var HeaderDanger = (0, _styledComponents["default"])(Header)(function (_ref22) {
   var type = _ref22.type;
   return [{
-    "color": "rgba(235, 87, 87, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(235, 87, 87, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(239, 121, 121, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(239, 121, 121, var(--tw-text-opacity))"
     }
   }];
 });
 var HeaderWarning = (0, _styledComponents["default"])(Header)(function (_ref23) {
   var type = _ref23.type;
   return [{
-    "color": "rgba(240, 135, 39, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(240, 135, 39, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(243, 159, 82, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(243, 159, 82, var(--tw-text-opacity))"
     }
   }];
 });
 var HeaderTip = (0, _styledComponents["default"])(Header)(function (_ref24) {
   var type = _ref24.type;
   return [{
-    "color": "rgba(98, 0, 238, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(98, 0, 238, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(206, 176, 250, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(206, 176, 250, var(--tw-text-opacity))"
     }
   }];
 });
 var HeaderBug = (0, _styledComponents["default"])(Header)(function (_ref25) {
   var type = _ref25.type;
   return [{
-    "color": "rgba(240, 135, 39, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(240, 135, 39, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(243, 159, 82, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(243, 159, 82, var(--tw-text-opacity))"
     }
   }];
 });
 var HeaderNote = (0, _styledComponents["default"])(Header)(function (_ref26) {
   var type = _ref26.type;
   return [{
-    "color": "rgba(21, 24, 25, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(21, 24, 25, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(255, 255, 255, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(255, 255, 255, var(--tw-text-opacity))"
     }
   }];
 });
@@ -358,9 +389,11 @@ var Text = _styledComponents["default"].div(function (_ref27) {
 
   return [{
     "fontWeight": "500",
-    "color": "rgba(72, 77, 81, 1)",
+    "--tw-text-opacity": "1",
+    "color": "rgba(72, 77, 81, var(--tw-text-opacity))",
     ".dark &": {
-      "color": "rgba(255, 255, 255, 1)"
+      "--tw-text-opacity": "1",
+      "color": "rgba(255, 255, 255, var(--tw-text-opacity))"
     },
     "paddingLeft": "1rem",
     "paddingRight": "1rem",
