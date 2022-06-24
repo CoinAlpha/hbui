@@ -1,10 +1,10 @@
 {
   "name": "@hummingbot/hbui",
-  "version": "1.1.9",
+  "version": "1.2.0",
   "author": "Hummingbot Design Team",
   "exports": {
     ".": "./_dist/index.js",
-    "./": "./_dist/",
+    "./*": "./_dist/",
     "./tailwind.config.js": "./tailwind.config.js"
   },
   "engines": {
